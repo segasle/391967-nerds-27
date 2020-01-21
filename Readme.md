@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сергей Слепенков](https://up.htmlacademy.ru/htmlcss/27/user/391967).
-* Наставник: `Дмитрий Иовлев`.
+* Наставник:[Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 

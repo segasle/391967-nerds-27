@@ -3,73 +3,129 @@
 @btn: #FB565A;
 @btn2: #00CA74;
 @btn3: #EFC84A;
+@btn4: #b4b4b4;
+@size: 16px;
+@sizeplus: @size + 2px;
+@sizeminus: @size - 2px;
 @font-face {
   font-family: "roboto";
-  src:
-          url("../fonts/roboto.woff") format("woff"),
-          url("../fonts/roboto.woff2") format("woff2");
+  src: url("../fonts/roboto.woff") format("woff"),
+  url("../fonts/roboto.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "roboto bold";
-  src:
-          url("../fonts/robotobold.woff") format("woff"),
-          url("../fonts/robotobold.woff2") format("woff2");
+  src: url("../fonts/robotobold.woff") format("woff"),
+  url("../fonts/robotobold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "roboto medium";
-  src:
-          url("../fonts/robotomedium.woff") format("woff"),
-          url("../fonts/robotomedium.woff2") format("woff2");
+  src: url("../fonts/robotomedium.woff") format("woff"),
+  url("../fonts/robotomedium.woff2") format("woff2");
 }
-body{
+
+body {
   width: 1440px;
   color: #000;
   background: @bg2;
   font-family: "roboto", sans-serif;
-  font-size: 16px;
+  font-size: @size;
   margin: auto;
 }
-header{
+
+header {
   background: @bg;
 }
-a{
+
+a {
   text-decoration: none;
+  color: black;
+  &:hover {
+    color: @btn;
+  }
+
+  &:active {
+    color: @btn4;
+  }
 }
-.menu{
-  a{
-    color: black;
+
+.menu {
+  a {
     font-family: "roboto medium", sans-serif;
     text-transform: uppercase;
   }
+  .active{
+    border-bottom: 1px solid @btn;
+  }
 }
-.text{
-  &-uppercase{
+
+.text {
+  &-uppercase {
     text-transform: uppercase;
   }
 }
-.card{
-  &-title{
+.title{
+  font-size: @sizeplus;
+
+  &-minus {
+    font-size: @sizeminus;
+  }
+}
+.card {
+  &-title {
     font-size: 24px;
     font-family: "roboto bold", sans-serif;
   }
 }
-.btn{
-  color: @bg2;
-  font-family: "roboto medium", sans-serif;
-  &-red{
-    background: @btn;
-  }&-green{
-    background: @btn2;
-  }&-yellow{
-    background: @btn3;
+
+.roboto {
+  &-medium {
+    font-family: "roboto medium", sans-serif;
+  }
+
+  &-bold {
+    font-family: "roboto bold", sans-serif;
   }
 }
-h1, .h1{
+
+.btn {
+  color: @bg2;
+  font-family: "roboto medium", sans-serif;
+
+  &-red {
+    background: @btn;
+  }
+
+  &-green {
+    background: @btn2;
+  }
+
+  &-yellow {
+    background: @btn3;
+  }
+  &-gray {
+    background: @btn4;
+    color: black;
+  }
+}
+
+h1, .h1 {
   font-size: 56px;
   font-weight: bold;
 }
-.logo{
-  &-img{
+
+.h2 {
+  font-size: 45px;
+  font-family: "roboto medium", sans-serif;
+}
+
+.h3 {
+  font-size: 36px;
+}
+
+.logo {
+  &-img {
     background-image: url("../img/icons/nerds-logo.svg");
     display: block;
     height: 65px;
@@ -77,44 +133,50 @@ h1, .h1{
   }
 }
 
-.fa{
-  &-vk{
+.fa {
+  &-vk {
     background-image: url("../img/icons/vk-icon.svg");
     display: block;
     background-repeat: no-repeat;
     height: 10px;
   }
-  &-facebook-f{
+
+  &-facebook-f {
     background-image: url("../img/icons/fb-icon.svg");
     display: block;
     background-repeat: no-repeat;
     height: 10px;
   }
-  &-instagram{
+
+  &-instagram {
     background-image: url("../img/icons/insta-icon.svg");
     display: block;
     background-repeat: no-repeat;
     height: 10px;
   }
-  &-shopping-cart{
+
+  &-shopping-cart {
     background-image: url("../img/icons/cart-icon.svg");
     display: block;
     background-repeat: no-repeat;
     height: 10px;
   }
-  &-window{
+
+  &-window {
     background-image: url("../img/icons/browser.svg");
     display: block;
     background-repeat: no-repeat;
     height: 20px;
   }
-  &-top{
+
+  &-top {
     background-image: url("../img/icons/icon-up-dir.svg");
     display: block;
     background-repeat: no-repeat;
     height: 20px;
   }
-  &-bottom{
+
+  &-bottom {
     background-image: url("../img/icons/icon-down-dir.svg");
     display: block;
     background-repeat: no-repeat;

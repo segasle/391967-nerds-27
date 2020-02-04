@@ -32,6 +32,38 @@ body{
 header{
   background: @bg;
 }
+a{
+  text-decoration: none;
+}
+.menu{
+  a{
+    color: black;
+    font-family: "roboto medium", sans-serif;
+    text-transform: uppercase;
+  }
+}
+.text{
+  &-uppercase{
+    text-transform: uppercase;
+  }
+}
+.card{
+  &-title{
+    font-size: 24px;
+    font-family: "roboto bold", sans-serif;
+  }
+}
+.btn{
+  color: @bg2;
+  font-family: "roboto medium", sans-serif;
+  &-red{
+    background: @btn;
+  }&-green{
+    background: @btn2;
+  }&-yellow{
+    background: @btn3;
+  }
+}
 h1, .h1{
   font-size: 56px;
   font-weight: bold;

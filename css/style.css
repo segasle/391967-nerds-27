@@ -23,14 +23,14 @@ body {
 .header {
   background: #EEEEEE;
 }
-a {
+.link {
   text-decoration: none;
   color: black;
 }
-a:hover {
+.link:hover {
   color: #FB565A;
 }
-a:active {
+.link:active {
   color: #b4b4b4;
 }
 .menu a {

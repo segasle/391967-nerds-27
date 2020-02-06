@@ -4,6 +4,7 @@
 @btn2: #00CA74;
 @btn3: #EFC84A;
 @btn4: #b4b4b4;
+@text: #283136;
 @size: 16px;
 @sizeplus: @size + 2px;
 @sizeminus: @size - 2px;
@@ -14,27 +15,29 @@
 }
 
 @font-face {
-  font-family: "roboto bold";
+  font-family: "roboto";
   src: url("../fonts/robotobold.woff") format("woff"),
   url("../fonts/robotobold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "roboto medium";
+  font-family: "roboto";
   src: url("../fonts/robotomedium.woff") format("woff"),
   url("../fonts/robotomedium.woff2") format("woff2");
 }
 
 body {
-  width: 1440px;
   color: #000;
   background: @bg2;
   font-family: "roboto", sans-serif;
   font-size: @size;
-  margin: auto;
 }
+.container{
+  width: 1440px;
+  margin: auto;
 
-header {
+}
+.header {
   background: @bg;
 }
 
@@ -52,7 +55,8 @@ a {
 
 .menu {
   a {
-    font-family: "roboto medium", sans-serif;
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
   }
   .active{
@@ -75,24 +79,27 @@ a {
 .card {
   &-title {
     font-size: 24px;
-    font-family: "roboto bold", sans-serif;
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
   }
 }
 
 .roboto {
   &-medium {
-    font-family: "roboto medium", sans-serif;
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
   }
 
   &-bold {
-    font-family: "roboto bold", sans-serif;
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
   }
 }
 
 .btn {
   color: @bg2;
-  font-family: "roboto medium", sans-serif;
-
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
   &-red {
     background: @btn;
   }
@@ -117,21 +124,14 @@ h1, .h1 {
 
 .h2 {
   font-size: 45px;
-  font-family: "roboto medium", sans-serif;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
 }
 
 .h3 {
   font-size: 36px;
 }
 
-.logo {
-  &-img {
-    background-image: url("../img/icons/nerds-logo.svg");
-    display: block;
-    height: 65px;
-    background-repeat: no-repeat;
-  }
-}
 
 .fa {
   &-vk {

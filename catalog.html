@@ -7,239 +7,242 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <div class="row">
-    <div class="col-4">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/icons/nerds-logo.svg" alt="логотип">
+<div class="container">
+  <header class="header">
+    <div class="row">
+      <div class="col-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/icons/nerds-logo.svg" alt="логотип">
 
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="col-4">
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li class="active"><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-4">
-      <div class="cart">
-        <a href="" class="fas fa-shopping-cart">Корзина</a>
-      </div>
-    </div>
-  </div>
-  <h1 class="roboto-medium">Магазин готовых шаблонов</h1>
-</header>
-<main>
-  <div class="row">
-    <div class="col-4">
-      <form method="post">
-        <div class="range">
-          <div class="line"></div>
-          <button type="button" class="circle" aria-label="минимальная цена"></button>
-          <button type="button" class="circle" aria-label="максимальная цена"></button>
-        </div>
-        <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
-        <label for="to" class="text-uppercase">От</label>
-        <input type="text" id="to" placeholder="0" value="0">
-        <label for="go" class="text-uppercase">До</label>
-        <input type="text" id="go" value="15 000" placeholder="15 000">
-        <p class="roboto-bold text-uppercase title"><b>Сетка</b></p>
-        <div class="">
-          <label>
-            <input type="radio" name="q1">Адаптивная
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="radio" name="q1">Фиксированная
-
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="radio" name="q1">Резиновая
-
-          </label>
-        </div>
-        <p class="roboto-bold text-uppercase title"><b>Оссобенности:</b></p>
-        <div class="">
-          <label>
-            <input type="checkbox" name="e1" checked>Слайдер
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="checkbox" name="e2">Блок преимуществ
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="checkbox" name="e3" checked>Новости
-
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="checkbox" name="e5">Галерея
-
-          </label>
-        </div>
-        <div class="">
-          <label>
-            <input type="checkbox" name="e4">Корзина
-
-          </label>
-        </div>
-        <button type="button" class="btn btn-gray">показать</button>
-      </form>
-    </div>
-    <div class="col-8">
-      <div class="row">
-        <div class="col-8">
-          <p class="bold text-uppercase roboto-bold title">Сортировать</p>
-        </div>
-        <div class="col-4">
+      <div class="col-4">
+        <nav class="menu">
           <ul>
-            <li class="title-minus">По цене</li>
-            <li class="title-minus">По типу</li>
-            <li class="title-minus">По названию</li>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="">Клиенты</a></li>
+            <li class="active"><a href="catalog.html">Магазин</a></li>
+            <li><a href="">Контакты</a></li>
           </ul>
-          <a href="" class="fas fa-top"></a>
-          <a href="" class="fas fa-bottom"></a>
+        </nav>
+      </div>
+      <div class="col-4">
+        <div class="cart">
+          <a href="" class="fas fa-shopping-cart">Корзина</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-sedona.jpg" alt="картинка 1" width="360" height="576">
-
-            </a>
-            <div class="cart-bg">
-              <h3 class="title text-uppercase roboto-bold"><a href="">Sedona</a></h3>
-              <p class="text-center">Информационный сайт для туристов</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+    </div>
+    <h1 class="roboto-medium">Магазин готовых шаблонов</h1>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-4">
+        <form method="post">
+          <div class="range">
+            <div class="line"></div>
+            <button type="button" class="circle" aria-label="минимальная цена"></button>
+            <button type="button" class="circle" aria-label="максимальная цена"></button>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-pink.jpg" alt="картинка 2" width="360" height="576">
-
-            </a>
-            <div class="cart-bg">
-
-              <h3 class="title text-uppercase roboto-bold"><a href="">Pink App</a></h3>
-              <p class="text-center">Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+          <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
+          <label for="to" class="text-uppercase">От</label>
+          <input type="text" id="to" placeholder="0" value="0">
+          <label for="go" class="text-uppercase">До</label>
+          <input type="text" id="go" value="15 000" placeholder="15 000">
+          <p class="roboto-bold text-uppercase title"><b>Сетка</b></p>
+          <div class="">
+            <label>
+              <input type="radio" name="q1">Адаптивная
+            </label>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-barbershop.jpg" alt="картинка 3" width="360" height="576">
+          <div class="">
+            <label>
+              <input type="radio" name="q1">Фиксированная
 
-            </a>
-            <div class="cart-bg">
-              <h3 class="title text-uppercase roboto-bold"><a href="">Barbershop</a></h3>
-              <p class="text-center">Сайт салона красоты. Для мужчин, да.</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+            </label>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-mishka.jpg" alt="картинка 4" width="360" height="576">
+          <div class="">
+            <label>
+              <input type="radio" name="q1">Резиновая
 
-            </a>
-            <div class="cart-bg">
-              <h3 class="title text-uppercase roboto-bold"><a href="">MISHKA</a></h3>
-              <p class="text-center">Интернет-магазин вязаных игрушек</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+            </label>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-pink.jpg" alt="картинка 5" width="360" height="576">
+          <p class="roboto-bold text-uppercase title"><b>Оссобенности:</b></p>
+          <div class="">
+            <label>
+              <input type="checkbox" name="e1" checked>Слайдер
+            </label>
+          </div>
+          <div class="">
+            <label>
+              <input type="checkbox" name="e2">Блок преимуществ
+            </label>
+          </div>
+          <div class="">
+            <label>
+              <input type="checkbox" name="e3" checked>Новости
 
-            </a>
-            <div class="cart-bg">
-              <h3 class="title text-uppercase roboto-bold"><a href="">A Plus</a></h3>
-              <p class="text-center">Лендинг курсов повышения квалификации</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+            </label>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="cart">
-            <i class="fas fa-window"></i>
-            <a href="">
-              <img src="img/img-kvast.jpg" alt="картинка 6" width="360" height="576">
+          <div class="">
+            <label>
+              <input type="checkbox" name="e5">Галерея
 
-            </a>
-            <div class="cart-bg">
-              <h3 class="title text-uppercase roboto-bold"><a href="">Кваст</a></h3>
-              <p class="text-center">Промо-сайт производителя крафтового кваса</p>
-              <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
-            </div>
+            </label>
           </div>
-        </div>
+          <div class="">
+            <label>
+              <input type="checkbox" name="e4">Корзина
+
+            </label>
+          </div>
+          <button type="button" class="btn btn-gray">показать</button>
+        </form>
       </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">1</a></li>
-          <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">2</a></li>
-          <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">3</a></li>
-          <li class="page-item"><a class="page-link text-uppercase roboto-medium" href="#">Следующая</a></li>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-8">
+            <p class="bold text-uppercase roboto-bold title">Сортировать</p>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="title-minus">По цене</li>
+              <li class="title-minus">По типу</li>
+              <li class="title-minus">По названию</li>
+            </ul>
+            <a href="" class="fas fa-top"></a>
+            <a href="" class="fas fa-bottom"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-sedona.jpg" alt="картинка 1" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+                <h3 class="title text-uppercase roboto-bold"><a href="">Sedona</a></h3>
+                <p class="text-center">Информационный сайт для туристов</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-pink.jpg" alt="картинка 2" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+
+                <h3 class="title text-uppercase roboto-bold"><a href="">Pink App</a></h3>
+                <p class="text-center">Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-barbershop.jpg" alt="картинка 3" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+                <h3 class="title text-uppercase roboto-bold"><a href="">Barbershop</a></h3>
+                <p class="text-center">Сайт салона красоты. Для мужчин, да.</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-mishka.jpg" alt="картинка 4" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+                <h3 class="title text-uppercase roboto-bold"><a href="">MISHKA</a></h3>
+                <p class="text-center">Интернет-магазин вязаных игрушек</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-pink.jpg" alt="картинка 5" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+                <h3 class="title text-uppercase roboto-bold"><a href="">A Plus</a></h3>
+                <p class="text-center">Лендинг курсов повышения квалификации</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cart">
+              <i class="fas fa-window"></i>
+              <a href="">
+                <img src="img/img-kvast.jpg" alt="картинка 6" width="360" height="576">
+
+              </a>
+              <div class="cart-bg">
+                <h3 class="title text-uppercase roboto-bold"><a href="">Кваст</a></h3>
+                <p class="text-center">Промо-сайт производителя крафтового кваса</p>
+                <a href="" class="btn btn-red text-uppercase roboto-medium">9 900 руб</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">1</a></li>
+            <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">2</a></li>
+            <li class="page-item"><a class="page-link roboto-medium text-uppercase" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-uppercase roboto-medium" href="#">Следующая</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="maps">
+      <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716231182!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580317887005!5m2!1sru!2sru"
+                width="600" height="450" allowfullscreen=""></iframe>
+        <img src="img/map-marker.png" alt="">
+      </div>
+      <div class="address">
+        <p class="text-uppercase"><b>NЁRDS DESIGN STUDIO</b></p>
+        <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="" class="btn btn-red text-uppercase">Напишите нам</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col-6">
+        <ul>
+          <li><a href="" class="fab fa-vk" aria-label="vk"></a></li>
+          <li><a href="" class="fab fa-facebook-f" aria-label="facebook"></a></li>
+          <li><a href="" class="fab fa-instagram" aria-label="instagram"></a></li>
         </ul>
-      </nav>
+      </div>
+      <div class="col-6">
+        <p class="h2"><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
-  </div>
-  <div class="maps">
-    <div class="google-maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716231182!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580317887005!5m2!1sru!2sru"
-              width="600" height="450" allowfullscreen=""></iframe>
-      <img src="img/map-marker.png" alt="">
-    </div>
-    <div class="address">
-      <p class="text-uppercase"><b>NЁRDS DESIGN STUDIO</b></p>
-      <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a href="" class="btn btn-red text-uppercase">Напишите нам</a>
-    </div>
-  </div>
-</main>
-<footer>
-  <div class="row">
-    <div class="col-6">
-      <ul>
-        <li><a href="" class="fab fa-vk" aria-label="vk"></a></li>
-        <li><a href="" class="fab fa-facebook-f" aria-label="facebook"></a></li>
-        <li><a href="" class="fab fa-instagram" aria-label="instagram"></a></li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <p class="h2"><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
+
+</div>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">

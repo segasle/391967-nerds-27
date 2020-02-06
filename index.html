@@ -7,192 +7,195 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <div class="row">
-    <div class="col-4">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/icons/nerds-logo.svg" alt="логотип">
-        </a>
+<div class="container">
+  <header class="header">
+    <div class="row">
+      <div class="col-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/icons/nerds-logo.svg" alt="логотип">
+          </a>
+        </div>
+      </div>
+      <div class="col-4">
+        <nav class="menu">
+          <ul>
+            <li class="active"><a href="index.html">Студия</a></li>
+            <li><a href="">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-4">
+        <div class="cart">
+          <a href="" class="fas fa-shopping-cart text-uppercase">Корзина</a>
+        </div>
       </div>
     </div>
-    <div class="col-4">
-      <nav class="menu">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></button>
+          <button type="button" data-target="#carouselExampleIndicators" data-slide-to="1"></button>
+          <button type="button" data-target="#carouselExampleIndicators" data-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.png" alt="слайдер 1" width="698" height="413">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="h1">Долго, дорого, скрупулезно.</p>
+              <p>Математически выверенный дизайн
+                для вашего сайта или мобильного приложения.</p>
+              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.png" alt="слайдер 2" width="663" height="430">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="h1">Любим математику как никто другой</p>
+              <p>Никакого креатива, только математические формулы
+                для расчета идеальных пропорций.</p>
+              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.png" alt="слайдер 3" width="759" height="411">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="h1">Только ночь, только хардкор</p>
+              <p>Работать днем, как все? Мы против этого.
+                Ближе к полуночи работа только начинается</p>
+              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-4">
+        <section>
+          <div class="card">
+            <img class="card-img-top" src="img/illustration-1.jpg" alt="картинка 1" width="300" height="146">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Веб-сайты</h3>
+              <p class="card-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a href="#" class="btn btn-red text-uppercase">Заказать</a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="col-4">
+        <section>
+          <div class="card">
+            <img class="card-img-top" src="img/illustration-2.jpg" alt="картинка 2" width="300" height="146">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Приложения</h3>
+              <p class="card-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="#" class="btn btn-green text-uppercase">Заказать</a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="col-4">
+        <section>
+          <div class="card">
+            <img class="card-img-top" src="img/illustration-3.jpg" alt="картинка 3" width="300" height="146">
+            <div class="card-body">
+              <h3 class="card-title text-uppercase">Презентации</h3>
+              <p class="card-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a href="#" class="btn btn-yellow text-uppercase">Заказать</a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h4 class="h2">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h4>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математически</p>
+        <p class="text-uppercase roboto-medium"><b>Выполняем заказы на разработку: </b></p>
         <ul>
-          <li class="active"><a href="index.html">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android
+          </li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </nav>
-    </div>
-    <div class="col-4">
-      <div class="cart">
-        <a href="" class="fas fa-shopping-cart text-uppercase">Корзина</a>
+      </div>
+      <div class="col-6">
+        <img src="img/stickies.png" alt="" width="360" height="208">
+        <p class="text-uppercase roboto-bold"><b>с 2004 года Любим точность во всем: </b></p>
+        <table class="table">
+          <thead>
+          <tr>
+            <th><p>Уровень самоотдачи</p></th>
+            <th><p>Соблюдение сроков</p></th>
+            <th><p>Минимальная предоплата</p></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><p class="bold">146<span>%</span></p></td>
+            <td><p class="bold">100<span>%</span></p></td>
+            <td><p class="bold">50<span>%</span></p></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></button>
-        <button type="button" data-target="#carouselExampleIndicators" data-slide-to="1"></button>
-        <button type="button" data-target="#carouselExampleIndicators" data-slide-to="2"></button>
+    <div class="row">
+      <div class="col-3">
+        <img src="img/logo-1.png" alt="" width="199" height="68">
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/slide1.png" alt="слайдер 1" width="698" height="413">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="h1">Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн
-              для вашего сайта или мобильного приложения.</p>
-            <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/slide2.png" alt="слайдер 2" width="663" height="430">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="h1">Любим математику как никто другой</p>
-            <p>Никакого креатива, только математические формулы
-              для расчета идеальных пропорций.</p>
-            <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
-
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/slide3.png" alt="слайдер 3" width="759" height="411">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="h1">Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого.
-              Ближе к полуночи работа только начинается</p>
-            <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
-
-          </div>
-        </div>
+      <div class="col-3">
+        <img src="img/logo-2.png" alt="" width="209" height="87">
+      </div>
+      <div class="col-3">
+        <img src="img/logo-3.png" alt="" width="185" height="52">
+      </div>
+      <div class="col-3">
+        <img src="img/logo-4.png" alt="" width="173" height="84">
       </div>
     </div>
-  </div>
-</header>
-<main>
-  <div class="row">
-    <div class="col-4">
-      <section>
-        <div class="card">
-          <img class="card-img-top" src="img/illustration-1.jpg" alt="картинка 1" width="300" height="146">
-          <div class="card-body">
-            <h3 class="card-title text-uppercase">Веб-сайты</h3>
-            <p class="card-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="btn btn-red text-uppercase">Заказать</a>
-          </div>
-        </div>
+    <div class="maps">
+      <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716231182!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580317887005!5m2!1sru!2sru"
+                width="600" height="450" allowfullscreen=""></iframe>
+        <img src="img/map-marker.png" alt="">
 
-      </section>
+      </div>
+      <div class="address">
+        <p class="text-uppercase"><b>NЁRDS DESIGN STUDIO</b></p>
+        <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="" class="btn btn-red text-uppercase" data-toggle="modal" data-target="#exampleModal">Напишите нам</a>
+      </div>
     </div>
-    <div class="col-4">
-      <section>
-        <div class="card">
-          <img class="card-img-top" src="img/illustration-2.jpg" alt="картинка 2" width="300" height="146">
-          <div class="card-body">
-            <h3 class="card-title text-uppercase">Приложения</h3>
-            <p class="card-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="btn btn-green text-uppercase">Заказать</a>
-          </div>
-        </div>
+  </main>
+  <footer>
+    <div class="row">
+      <div class="col-6">
+        <ul>
+          <li><a href="" class="fab fa-vk" aria-label="vk"></a></li>
+          <li><a class="fab fa-facebook-f" aria-label="facebook"></a></li>
+          <li><a class="fab fa-instagram" aria-label="instagram"></a></li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <p class="h3 roboto-bold"><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
 
-      </section>
-    </div>
-    <div class="col-4">
-      <section>
-        <div class="card">
-          <img class="card-img-top" src="img/illustration-3.jpg" alt="картинка 3" width="300" height="146">
-          <div class="card-body">
-            <h3 class="card-title text-uppercase">Презентации</h3>
-            <p class="card-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="btn btn-yellow text-uppercase">Заказать</a>
-          </div>
-        </div>
 
-      </section>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <h4 class="h2">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h4>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математически</p>
-      <p class="text-uppercase roboto-medium"><b>Выполняем заказы на разработку: </b></p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android
-        </li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <img src="img/stickies.png" alt="" width="360" height="208">
-      <p class="text-uppercase roboto-bold"><b>с 2004 года Любим точность во всем: </b></p>
-      <table class="table">
-        <thead>
-        <tr>
-          <th><p>Уровень самоотдачи</p></th>
-          <th><p>Соблюдение сроков</p></th>
-          <th><p>Минимальная предоплата</p></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td><p class="bold">146<span>%</span></p></td>
-          <td><p class="bold">100<span>%</span></p></td>
-          <td><p class="bold">50<span>%</span></p></td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <img src="img/logo-1.png" alt="" width="199" height="68">
-    </div>
-    <div class="col-3">
-      <img src="img/logo-2.png" alt="" width="209" height="87">
-    </div>
-    <div class="col-3">
-      <img src="img/logo-3.png" alt="" width="185" height="52">
-    </div>
-    <div class="col-3">
-      <img src="img/logo-4.png" alt="" width="173" height="84">
-    </div>
-  </div>
-  <div class="maps">
-    <div class="google-maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530032!2d30.320858716231182!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580317887005!5m2!1sru!2sru"
-              width="600" height="450" allowfullscreen=""></iframe>
-      <img src="img/map-marker.png" alt="">
-
-    </div>
-    <div class="address">
-      <p class="text-uppercase"><b>NЁRDS DESIGN STUDIO</b></p>
-      <address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a href="" class="btn btn-red text-uppercase" data-toggle="modal" data-target="#exampleModal">Напишите нам</a>
-    </div>
-  </div>
-</main>
-<footer>
-  <div class="row">
-    <div class="col-6">
-      <ul>
-        <li><a href="" class="fab fa-vk" aria-label="vk"></a></li>
-        <li><a class="fab fa-facebook-f" aria-label="facebook"></a></li>
-        <li><a class="fab fa-instagram" aria-label="instagram"></a></li>
-      </ul>
-    </div>
-    <div class="col-6">
-      <p class="h3 roboto-bold"><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </div>
-</footer>
-
+</div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">

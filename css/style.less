@@ -1,4 +1,5 @@
 @bg: #EEEEEE;
+@black: #000;
 @bg2: #FFFFFF;
 @btn: #FB565A;
 @btn2: #00CA74;
@@ -27,16 +28,18 @@
 }
 
 body {
-  color: #000;
+  color: @text;
   background: @bg2;
   font-family: "roboto", sans-serif;
   font-size: @size;
 }
-.container{
+
+.container {
   width: 1440px;
   margin: auto;
 
 }
+
 .header {
   background: @bg;
 }
@@ -44,6 +47,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+
   &:hover {
     color: @btn;
   }
@@ -59,7 +63,8 @@ a {
     font-weight: 700;
     text-transform: uppercase;
   }
-  .active{
+
+  .active {
     border-bottom: 1px solid @btn;
   }
 }
@@ -69,18 +74,48 @@ a {
     text-transform: uppercase;
   }
 }
-.title{
+
+.title {
   font-size: @sizeplus;
 
   &-minus {
     font-size: @sizeminus;
   }
 }
+
+.text {
+  line-height: 24px;
+  color: @text;
+
+  &-center {
+    text-align: center;
+  }
+}
+
 .card {
   &-title {
     font-size: 24px;
     font-family: "roboto", sans-serif;
     font-weight: bold;
+    color: @black;
+
+  }
+
+  &-text {
+    line-height: 24px;
+    color: @text;
+  }
+}
+
+.maps, .table, .cart-bg {
+  .text {
+    line-height: 18px;
+  }
+}
+
+.carousel {
+  .h1 {
+    line-height: 55px;
   }
 }
 
@@ -100,6 +135,7 @@ a {
   color: @bg2;
   font-family: "roboto", sans-serif;
   font-weight: bold;
+
   &-red {
     background: @btn;
   }
@@ -111,6 +147,7 @@ a {
   &-yellow {
     background: @btn3;
   }
+
   &-gray {
     background: @btn4;
     color: black;
@@ -118,17 +155,22 @@ a {
 }
 
 h1, .h1 {
+  color: @black;
   font-size: 56px;
   font-weight: bold;
 }
 
 .h2 {
   font-size: 45px;
+  line-height: 45px;
   font-family: "roboto", sans-serif;
   font-weight: 700;
+  color: @black;
+
 }
 
 .h3 {
+  color: @black;
   font-size: 36px;
 }
 

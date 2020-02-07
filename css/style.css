@@ -1,13 +1,19 @@
 @font-face {
   font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
   src: url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
 }
 @font-face {
   font-family: "roboto";
+  font-weight: bold;
+  font-style: normal;
   src: url("../fonts/robotobold.woff") format("woff"), url("../fonts/robotobold.woff2") format("woff2");
 }
 @font-face {
   font-family: "roboto";
+  font-weight: 500;
+  font-style: normal;
   src: url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
 }
 body {
@@ -41,21 +47,21 @@ body {
 .menu .active {
   border-bottom: 1px solid #FB565A;
 }
+.text {
+  line-height: 24px;
+  color: #283136;
+}
 .text-uppercase {
   text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
 }
 .title {
   font-size: 18px;
 }
 .title-minus {
   font-size: 14px;
-}
-.text {
-  line-height: 24px;
-  color: #283136;
-}
-.text-center {
-  text-align: center;
 }
 .card-title {
   font-size: 24px;

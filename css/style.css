@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Кoboto";
+  font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
@@ -40,7 +40,6 @@ body {
   color: #b4b4b4;
 }
 .menu a {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -65,7 +64,6 @@ body {
 }
 .card-title {
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #000;
 }
@@ -82,16 +80,13 @@ body {
   line-height: 55px;
 }
 .roboto-medium {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 .btn {
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 .btn-red {
@@ -116,7 +111,6 @@ h1,
 .h2 {
   font-size: 45px;
   line-height: 45px;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #000;
 }

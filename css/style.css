@@ -18,7 +18,7 @@
 }
 body {
   color: #283136;
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
@@ -27,14 +27,14 @@ body {
   margin: auto;
 }
 .header {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 .link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .link:hover {
-  color: #FB565A;
+  color: #fb565a;
 }
 .link:active {
   color: #b4b4b4;
@@ -44,7 +44,7 @@ body {
   text-transform: uppercase;
 }
 .menu .active {
-  border-bottom: 1px solid #FB565A;
+  border-bottom: 1px solid #fb565a;
 }
 .text {
   line-height: 24px;
@@ -65,7 +65,7 @@ body {
 .card-title {
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: #000000;
 }
 .card-text {
   line-height: 24px;
@@ -86,25 +86,24 @@ body {
   font-weight: bold;
 }
 .btn {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
 }
 .btn-red {
-  background: #FB565A;
+  background: #fb565a;
 }
 .btn-green {
-  background: #00CA74;
+  background: #00ca74;
 }
 .btn-yellow {
-  background: #EFC84A;
+  background: #efa84a;
 }
 .btn-gray {
   background: #b4b4b4;
   color: black;
 }
-h1,
 .h1 {
-  color: #000;
+  color: #000000;
   font-size: 56px;
   font-weight: bold;
 }
@@ -112,10 +111,10 @@ h1,
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  color: #000;
+  color: #000000;
 }
 .h3 {
-  color: #000;
+  color: #000000;
   font-size: 36px;
 }
 .fa-vk {

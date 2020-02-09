@@ -22,12 +22,18 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
+div {
+  box-sizing: border-box;
+}
 .container {
   width: 1440px;
   margin: auto;
 }
 .header {
   background: #eeeeee;
+}
+.row {
+  display: flex;
 }
 .link {
   text-decoration: none;

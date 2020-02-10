@@ -19,17 +19,30 @@
 body {
   color: #283136;
   background: #ffffff;
+  overflow-x: hidden;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  width: 100%;
 }
 div {
   box-sizing: border-box;
 }
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/nerds-index.jpg");
+  width: 100%;
+  height: 2476px;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
 .container {
-  width: 1440px;
+  width: 1200px;
   margin: auto;
 }
 .header {
+  padding-top: 45px;
   background: #eeeeee;
 }
 .row {
@@ -38,8 +51,8 @@ div {
   margin: 0 -15px;
 }
 .col-4 {
-  flex: 0 0 33.3334%;
-  max-width: 33.3334%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
 }
 .col-6 {
   flex: 0 0 50%;
@@ -49,9 +62,14 @@ div {
   flex: 0 0 25%;
   max-width: 25%;
 }
+.col-5 {
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%;
+}
 .col-3,
 .col-6,
-.col-4 {
+.col-4,
+.col-5 {
   padding: 0 15px;
 }
 .link {

@@ -8,10 +8,10 @@
 </head>
 <body>
 <div class="layout"></div>
-<div class="container">
-  <header class="header">
+<header class="header">
+  <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-3">
         <div class="logo">
           <a href="index.html">
             <img src="img/icons/nerds-logo.svg" alt="логотип">
@@ -28,7 +28,7 @@
           </ul>
         </nav>
       </div>
-      <div class="col-4">
+      <div class="col-5">
         <div class="cart">
           <a href="" class="fas fa-shopping-cart text-uppercase link">Корзина</a>
         </div>
@@ -43,39 +43,65 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/slide1.png" alt="слайдер 1" width="698" height="413">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="h1">Долго, дорого, скрупулезно.</p>
-              <p class="text">Математически выверенный дизайн
-                для вашего сайта или мобильного приложения.</p>
-              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+            <div class="row">
+              <div class="col-6">
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="h1">Долго, дорого, скрупулезно.</p>
+                  <p class="text">Математически выверенный дизайн
+                    для вашего сайта или мобильного приложения.</p>
+                  <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+                </div>
+              </div>
+              <div class="col-6">
+
+                <img src="img/slide1.png" alt="слайдер 1" width="698" height="413">
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slide2.png" alt="слайдер 2" width="663" height="430">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="h1">Любим математику как никто другой</p>
-              <p class="text">Никакого креатива, только математические формулы
-                для расчета идеальных пропорций.</p>
-              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+            <div class="row">
+              <div class="col-6">
 
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="h1">Любим математику как никто другой</p>
+                  <p class="text">Никакого креатива, только математические формулы
+                    для расчета идеальных пропорций.</p>
+                  <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+
+                </div>
+              </div>
+              <div class="col-6">
+
+                <img src="img/slide2.png" alt="слайдер 2" width="663" height="430">
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slide3.png" alt="слайдер 3" width="759" height="411">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="h1">Только ночь, только хардкор</p>
-              <p class="text">Работать днем, как все? Мы против этого.
-                Ближе к полуночи работа только начинается</p>
-              <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+            <div class="row">
+              <div class="col-6">
 
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="h1">Только ночь, только хардкор</p>
+                  <p class="text">Работать днем, как все? Мы против этого.
+                    Ближе к полуночи работа только начинается</p>
+                  <a href="" class="btn btn-red text-uppercase">Узнать больше</a>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="img/slide3.png" alt="слайдер 3" width="759" height="411">
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-  <main>
+  </div>
+</header>
+<main>
+  <div class="container">
     <div class="row">
       <div class="col-4">
         <section>
@@ -178,8 +204,10 @@
         <a href="" class="btn btn-red text-uppercase" data-toggle="modal" data-target="#exampleModal">Напишите нам</a>
       </div>
     </div>
-  </main>
-  <footer>
+  </div>
+</main>
+<footer>
+  <div class="container">
     <div class="row">
       <div class="col-6">
         <ul>
@@ -193,10 +221,9 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-
-</div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -213,18 +240,19 @@
             <div class="col">
               <label for="name">
                 Ваше имя</label>
-                <input type="text" id="name" class="form-control" name="name" placeholder="Имя Фамилия">
+              <input type="text" id="name" class="form-control" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="col">
               <label for="email">
                 Ваш e-mail</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com">
+              <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com">
 
 
             </div>
           </div>
-          <label for="text">            Текст письма:</label>
-            <textarea name="text" id="text" cols="30" rows="10" class="form-control" placeholder="В свободной форме"></textarea>
+          <label for="text"> Текст письма:</label>
+          <textarea name="text" id="text" cols="30" rows="10" class="form-control"
+                    placeholder="В свободной форме"></textarea>
 
 
           <button type="submit" class="btn btn-red">Отправить</button>

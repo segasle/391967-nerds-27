@@ -34,6 +34,25 @@ div {
 }
 .row {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-4 {
+  flex: 0 0 33.3334%;
+  max-width: 33.3334%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-3,
+.col-6,
+.col-4 {
+  padding: 0 15px;
 }
 .link {
   text-decoration: none;

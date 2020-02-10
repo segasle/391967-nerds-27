@@ -8,8 +8,9 @@
 </head>
 <body>
 <div class="layout2"></div>
-<div class="container">
-  <header class="header">
+<header class="header">
+  <div class="container">
+
     <div class="row">
       <div class="col-4">
         <div class="logo">
@@ -36,8 +37,12 @@
       </div>
     </div>
     <h1 class="roboto-medium h1">Магазин готовых шаблонов</h1>
-  </header>
-  <main>
+  </div>
+
+</header>
+<main>
+  <div class="container">
+
     <div class="row">
       <div class="col-4">
         <form method="post">
@@ -226,8 +231,10 @@
         <a href="" class="btn btn-red text-uppercase">Напишите нам</a>
       </div>
     </div>
-  </main>
-  <footer>
+  </div>
+</main>
+<footer>
+  <div class="container">
     <div class="row">
       <div class="col-6">
         <ul>
@@ -241,9 +248,8 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
-  </footer>
-
-</div>
+  </div>
+</footer>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -261,17 +267,18 @@
             <div class="col">
               <label for="name">
                 Ваше имя</label>
-                <input type="text" id="name" class="form-control" name="name" placeholder="Имя Фамилия">
+              <input type="text" id="name" class="form-control" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="col">
               <label for="email">
                 Ваш e-mail</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com">
+              <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com">
             </div>
           </div>
           <label for="text">
             Текст письма:</label>
-            <textarea name="text" id="text" cols="30" rows="10" class="form-control" placeholder="В свободной форме"></textarea>
+          <textarea name="text" id="text" cols="30" rows="10" class="form-control"
+                    placeholder="В свободной форме"></textarea>
           <button type="submit" class="btn btn-red">Отправить</button>
         </form>
       </div>

@@ -57,6 +57,10 @@ div {
   padding-top: 45px;
   background: #eeeeee;
 }
+.header .cart {
+  padding-top: 35px;
+  float: right;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +68,9 @@ div {
 }
 .d-flex {
   display: flex;
+}
+.d-none {
+  display: none;
 }
 .col-4 {
   flex: 0 0 33.3333%;
@@ -96,6 +103,9 @@ div {
 }
 .link:active {
   color: #b4b4b4;
+}
+.menu {
+  padding-top: 20px;
 }
 .menu a {
   font-weight: 700;

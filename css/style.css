@@ -47,6 +47,7 @@ div {
   height: 3213px;
   background-repeat: no-repeat;
   opacity: 0.5;
+  background-position: center top;
 }
 .container {
   width: 1200px;
@@ -61,6 +62,12 @@ div {
 .header .cart {
   padding-top: 35px;
   float: right;
+}
+.header.space {
+  padding-bottom: 65px;
+}
+.header .h1 {
+  margin-top: 72px;
 }
 .row {
   display: flex;

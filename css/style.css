@@ -174,6 +174,21 @@ div {
 .roboto-bold {
   font-weight: bold;
 }
+.block-center {
+  display: table;
+  margin: auto;
+}
+.partners {
+  margin-top: 106px;
+}
+.maps {
+  margin-top: 118px;
+  background-image: url("../img/maps.jpg");
+  height: 416px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
 .btn {
   color: #ffffff;
   padding: 16px 40px;

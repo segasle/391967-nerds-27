@@ -88,11 +88,24 @@ div {
   flex: 0 0 41.6667%;
   max-width: 41.6667%;
 }
+.col-8 {
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+}
+.col-7 {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+}
 .col-3,
 .col-6,
 .col-4,
-.col-5 {
+.col-5,
+.col-8,
+.col-7 {
   padding: 0 15px;
+}
+.main {
+  padding-top: 72px;
 }
 .link {
   text-decoration: none;
@@ -138,6 +151,11 @@ div {
 .card-text {
   line-height: 24px;
   color: #283136;
+}
+.card-width {
+  max-width: 244px;
+  padding-left: 8px;
+  margin-top: -4px;
 }
 .maps .text,
 .table .text,

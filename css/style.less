@@ -126,10 +126,23 @@ div {
     flex: 0 0 @w;
     max-width: @w;
   }
+  &-8 {
+    @w: 66.6667%;
+    flex: 0 0 @w;
+    max-width: @w;
+  }
+  &-7 {
+    @w: 58.3333%;
+    flex: 0 0 @w;
+    max-width: @w;
+  }
 
-  &-3, &-6, &-4, &-5 {
+  &-3, &-6, &-4, &-5, &-8,&-7 {
     padding: 0 15px;
   }
+}
+.main{
+  padding-top: 72px;
 }
 
 .link {
@@ -198,6 +211,12 @@ div {
   &-text {
     line-height: 24px;
     color: @text;
+  }
+  &-width {
+
+    max-width: 244px;
+    padding-left: 8px;
+    margin-top: -4px;
   }
 }
 

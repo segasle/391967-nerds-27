@@ -73,7 +73,7 @@ div {
   width: 1200px;
   padding: 0 20px;
   margin: auto;
-
+  position: relative;
 }
 
 .header {
@@ -231,7 +231,7 @@ div {
   }
 }
 
-.maps, .table, .cart-bg {
+.google, .table, .cart-bg {
   .text {
     line-height: 18px;
   }
@@ -265,15 +265,31 @@ div {
 .partners {
   margin-top: 106px;
 }
-.maps{
+
+.google {
   margin-top: 118px;
   background-image: url("../img/maps.jpg");
   height: 416px;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+  opacity: .5;
   background-position: center top;
+
+
+  &-maps {
+    position: absolute;
+    right: 22%;
+    top: 71%;
+  }
+
+
+  &-address {
+    background: @bg2;
+    width: 315px;
+  }
 }
+
 .btn {
   color: @bg2;
   padding: 16px 40px;

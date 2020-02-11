@@ -52,6 +52,7 @@ div {
   width: 1200px;
   padding: 0 20px;
   margin: auto;
+  position: relative;
 }
 .header {
   padding-top: 45px;
@@ -160,7 +161,7 @@ div {
   margin-bottom: 44px;
   margin-top: -4px;
 }
-.maps .text,
+.google .text,
 .table .text,
 .cart-bg .text {
   line-height: 18px;
@@ -181,14 +182,24 @@ div {
 .partners {
   margin-top: 106px;
 }
-.maps {
+.google {
   margin-top: 118px;
   background-image: url("../img/maps.jpg");
   height: 416px;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+  opacity: 0.5;
   background-position: center top;
+}
+.google-maps {
+  position: absolute;
+  right: 22%;
+  top: 71%;
+}
+.google-address {
+  background: #ffffff;
+  width: 315px;
 }
 .btn {
   color: #ffffff;

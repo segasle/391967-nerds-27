@@ -188,6 +188,7 @@ div {
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+  background-position: center top;
 }
 .btn {
   color: #ffffff;

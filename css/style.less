@@ -88,7 +88,16 @@ html {
 
   .cart {
     padding-top: 35px;
-    float: right;
+    justify-content: flex-end;
+    a{
+      &::before{
+        content: '';
+        background-image: url("../img/icons/cart-icon.svg");
+        display: inline;
+        background-repeat: no-repeat;
+        height: 10px;
+      }
+    }
   }
 
   &.space {
@@ -177,7 +186,6 @@ html {
 .link {
   text-decoration: none;
   color: @black;
-
   &:hover {
     color: @btn;
   }
@@ -191,12 +199,16 @@ html {
   padding-top: 20px;
 
   ul {
+    list-style: none;
+  }
+  li{
+    margin: 0 23px;
 
   }
-
   a {
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom: 10px;
   }
 
   .active {
@@ -434,10 +446,6 @@ html {
   }
 
   &-shopping-cart {
-    background-image: url("../img/icons/cart-icon.svg");
-    display: block;
-    background-repeat: no-repeat;
-    height: 10px;
   }
 
   &-window {

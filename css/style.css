@@ -68,12 +68,19 @@ html {
   padding-top: 35px;
   justify-content: flex-end;
 }
+.header .cart a {
+  position: relative;
+}
 .header .cart a::before {
   content: '';
   background-image: url("../img/icons/cart-icon.svg");
-  display: inline-block;
+  display: block;
+  position: absolute;
+  left: -38px;
+  top: 5px;
   background-repeat: no-repeat;
-  height: 10px;
+  width: 16px;
+  height: 16px;
 }
 .header.space {
   padding-bottom: 88px;
@@ -145,6 +152,9 @@ html {
 .link:active {
   color: #b4b4b4;
 }
+a.active {
+  border-bottom: 1px solid #fb565a;
+}
 .menu {
   padding-top: 20px;
 }
@@ -158,9 +168,6 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 10px;
-}
-.menu .active {
-  border-bottom: 1px solid #fb565a;
 }
 .text {
   line-height: 24px;

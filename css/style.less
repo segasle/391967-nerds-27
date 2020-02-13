@@ -90,12 +90,18 @@ html {
     padding-top: 35px;
     justify-content: flex-end;
     a{
+      position: relative;
       &::before{
         content: '';
         background-image: url("../img/icons/cart-icon.svg");
-        display: inline-block;
+        display: block;
+        position: absolute;
+
+        left: -38px;
+        top: 5px;
         background-repeat: no-repeat;
-        height: 10px;
+        width: 16px;
+        height: 16px;
       }
     }
   }
@@ -194,7 +200,9 @@ html {
     color: @btn4;
   }
 }
-
+a.active {
+  border-bottom: 1px solid @btn;
+}
 .menu {
   padding-top: 20px;
 
@@ -211,9 +219,6 @@ html {
     padding-bottom: 10px;
   }
 
-  .active {
-    border-bottom: 1px solid @btn;
-  }
 }
 
 

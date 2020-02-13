@@ -202,7 +202,7 @@ html {
   margin-top: 37px;
 }
 .carousel-item {
-  min-height: 394px;
+  min-height: 405px;
 }
 .roboto-medium {
   font-weight: 500;
@@ -269,7 +269,7 @@ html {
   margin-bottom: 34px;
 }
 .space {
-  margin-bottom: 43px;
+  margin-bottom: 34px;
 }
 .h3 {
   color: #000000;
@@ -279,7 +279,7 @@ html {
   margin-left: -5px;
 }
 .ul li {
-  margin: 30px 0;
+  margin: 25px 0;
 }
 .footer {
   padding-top: 34px;

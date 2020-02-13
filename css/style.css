@@ -71,7 +71,7 @@ html {
 .header .cart a::before {
   content: '';
   background-image: url("../img/icons/cart-icon.svg");
-  display: inline;
+  display: inline-block;
   background-repeat: no-repeat;
   height: 10px;
 }
@@ -245,6 +245,9 @@ html {
 .google-address {
   background: #ffffff;
   width: 315px;
+}
+.logo img:active {
+  opacity: 0.2;
 }
 .btn {
   color: #ffffff;

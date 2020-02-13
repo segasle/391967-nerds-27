@@ -211,8 +211,7 @@ html {
   font-weight: bold;
 }
 .block-center {
-  display: table;
-  margin: auto;
+  margin: 0 auto;
 }
 .partners {
   margin-top: 106px;

@@ -71,8 +71,16 @@ html {
 .header.space {
   padding-bottom: 65px;
 }
-.header .h1 {
+.header h1.h1 {
   margin-top: 72px;
+}
+.relative {
+  position: relative;
+}
+.img {
+  position: absolute;
+  top: -15px;
+  left: 27px;
 }
 .row {
   display: flex;
@@ -180,6 +188,21 @@ html {
 }
 .carousel .h1 {
   line-height: 55px;
+  margin: 45px 0 0 0;
+}
+.carousel-caption {
+  max-width: 54%;
+  padding: 0 18px;
+}
+.carousel-caption .text {
+  margin-top: 26px;
+}
+.carousel-caption .btn {
+  display: table;
+  margin-top: 37px;
+}
+.carousel-item {
+  min-height: 394px;
 }
 .roboto-medium {
   font-weight: 500;

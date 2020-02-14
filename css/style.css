@@ -242,6 +242,11 @@ a.active {
   right: 49%;
   z-index: 9;
 }
+.carousel-indicators button {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
 .w-100 {
   width: 100%;
 }

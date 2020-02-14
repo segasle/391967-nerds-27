@@ -193,6 +193,10 @@ a.active {
   font-weight: bold;
   color: #000000;
 }
+.card-section {
+  padding-bottom: 93px;
+  border-bottom: 1px solid;
+}
 .card-text {
   line-height: 24px;
   color: #283136;
@@ -263,6 +267,9 @@ a.active {
 .flex-column-reverse {
   flex-direction: column-reverse;
 }
+.studio {
+  margin-top: 18px;
+}
 .studio img {
   margin-left: 103px;
   margin-top: 22px;
@@ -286,7 +293,7 @@ a.active {
 .studio-body .text,
 .studio-head .text {
   line-height: 19px;
-  margin: 11px 0;
+  margin: 11px 9px;
 }
 .btn {
   color: #ffffff;

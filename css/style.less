@@ -241,6 +241,7 @@ a.active {
   &-center {
     text-align: center;
   }
+
   &-right {
     text-align: right;
   }
@@ -265,8 +266,9 @@ a.active {
 
   }
 
-  &-body {
-
+  &-section {
+    padding-bottom: 93px;
+    border-bottom: 1px solid;
   }
 
   &-text {
@@ -368,32 +370,42 @@ a.active {
     }
   }
 }
-.flex{
-  &-column-reverse{
+
+.flex {
+  &-column-reverse {
     flex-direction: column-reverse;
   }
 
 }
+
 .studio {
+  margin-top: 18px;
+
   img {
     margin-left: 103px;
     margin-top: 22px;
   }
-  &-text{
+
+  &-text {
     padding-top: 12px;
     padding-right: 17px;
   }
-  &-body,&-head{
+
+  &-body, &-head {
     padding-left: 93px;
-    .h2{
+
+    .h2 {
       margin: 22px 6px 0;
     }
-    .small{
+
+    .small {
       font-size: 80%;
     }
-    .text{
+
+    .text {
       line-height: 19px;
-      margin: 11px 0;
+      margin: 11px 9px;
+
     }
   }
 }

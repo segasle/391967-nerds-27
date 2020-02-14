@@ -217,7 +217,8 @@ a.active {
 }
 .carousel-caption .btn {
   display: table;
-  margin-top: 37px;
+  margin-top: 44px;
+  padding: 10px 55px;
 }
 .carousel-item {
   min-height: 405px;
@@ -260,19 +261,39 @@ a.active {
   color: #ffffff;
   padding: 16px 40px;
   font-weight: bold;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 .btn-red {
   background: #fb565a;
 }
+.btn-red:active {
+  background: #f90b11;
+}
 .btn-green {
   background: #00ca74;
+}
+.btn-green:active {
+  background: #007e48;
 }
 .btn-yellow {
   background: #efa84a;
 }
+.btn-yellow:active {
+  background: #d98413;
+}
 .btn-gray {
   background: #b4b4b4;
   color: black;
+}
+.btn-gray:active {
+  background: #8e8e8e;
 }
 .h1 {
   color: #000000;

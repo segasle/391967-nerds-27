@@ -294,7 +294,8 @@ a.active {
 
     .btn {
       display: table;
-      margin-top: 37px;
+      margin-top: 44px;
+      padding: 10px 55px;
     }
   }
 
@@ -357,25 +358,49 @@ a.active {
   }
 }
 .btn {
+  @darken: 15%;
   color: @bg2;
   padding: 16px 40px;
   font-weight: bold;
-
+  opacity: .5;
+  text-decoration: none;
+  &:hover{
+    opacity: 1;
+  }
+  &:active{
+    color: rgba(255,255,255, .5);
+  }
   &-red {
     background: @btn;
+
+    &:active{
+      background: darken(@btn, @darken);
+    }
   }
 
   &-green {
     background: @btn2;
+
+    &:active{
+      background: darken(@btn2, @darken);
+    }
   }
 
   &-yellow {
     background: @btn3;
+
+    &:active{
+      background: darken(@btn3, @darken);
+    }
   }
 
   &-gray {
     background: @btn4;
     color: black;
+
+    &:active{
+      background: darken(@btn4, @darken);
+    }
   }
 }
 

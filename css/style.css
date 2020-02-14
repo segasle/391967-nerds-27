@@ -260,6 +260,9 @@ a.active {
 .logo img:active {
   opacity: 0.2;
 }
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
 .studio img {
   margin-left: 103px;
   margin-top: 22px;

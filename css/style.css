@@ -277,11 +277,16 @@ a.active {
 }
 .studio-body .h2,
 .studio-head .h2 {
-  margin: 22px 6px;
+  margin: 22px 6px 0;
 }
 .studio-body .small,
 .studio-head .small {
   font-size: 80%;
+}
+.studio-body .text,
+.studio-head .text {
+  line-height: 19px;
+  margin: 11px 0;
 }
 .btn {
   color: #ffffff;

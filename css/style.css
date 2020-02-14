@@ -179,6 +179,9 @@ a.active {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .title {
   font-size: 18px;
 }
@@ -256,6 +259,14 @@ a.active {
 }
 .logo img:active {
   opacity: 0.2;
+}
+.studio img {
+  margin-left: 103px;
+  margin-top: 22px;
+}
+.studio-text {
+  padding-top: 12px;
+  padding-right: 17px;
 }
 .btn {
   color: #ffffff;

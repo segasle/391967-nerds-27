@@ -89,9 +89,11 @@ html {
   .cart {
     padding-top: 35px;
     justify-content: flex-end;
-    a{
+
+    a {
       position: relative;
-      &::before{
+
+      &::before {
         content: '';
         background-image: url("../img/icons/cart-icon.svg");
         display: block;
@@ -192,6 +194,7 @@ html {
 .link {
   text-decoration: none;
   color: @black;
+
   &:hover {
     color: @btn;
   }
@@ -200,19 +203,23 @@ html {
     color: @btn4;
   }
 }
+
 a.active {
   border-bottom: 1px solid @btn;
 }
+
 .menu {
   padding-top: 20px;
 
   ul {
     list-style: none;
   }
-  li{
+
+  li {
     margin: 0 23px;
 
   }
+
   a {
     font-weight: 700;
     text-transform: uppercase;
@@ -233,6 +240,9 @@ a.active {
 
   &-center {
     text-align: center;
+  }
+  &-right {
+    text-align: right;
   }
 }
 
@@ -350,13 +360,26 @@ a.active {
     width: 315px;
   }
 }
-.logo{
-  img{
-    &:active{
+
+.logo {
+  img {
+    &:active {
       opacity: .2;
     }
   }
 }
+
+.studio {
+  img {
+    margin-left: 103px;
+    margin-top: 22px;
+  }
+  &-text{
+    padding-top: 12px;
+    padding-right: 17px;
+  }
+}
+
 .btn {
   @darken: 15%;
   color: @bg2;
@@ -364,16 +387,19 @@ a.active {
   font-weight: bold;
   opacity: .5;
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     opacity: 1;
   }
-  &:active{
-    color: rgba(255,255,255, .5);
+
+  &:active {
+    color: rgba(255, 255, 255, .5);
   }
+
   &-red {
     background: @btn;
 
-    &:active{
+    &:active {
       background: darken(@btn, @darken);
     }
   }
@@ -381,7 +407,7 @@ a.active {
   &-green {
     background: @btn2;
 
-    &:active{
+    &:active {
       background: darken(@btn2, @darken);
     }
   }
@@ -389,7 +415,7 @@ a.active {
   &-yellow {
     background: @btn3;
 
-    &:active{
+    &:active {
       background: darken(@btn3, @darken);
     }
   }
@@ -398,7 +424,7 @@ a.active {
     background: @btn4;
     color: black;
 
-    &:active{
+    &:active {
       background: darken(@btn4, @darken);
     }
   }

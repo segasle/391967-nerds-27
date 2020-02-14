@@ -271,6 +271,18 @@ a.active {
   padding-top: 12px;
   padding-right: 17px;
 }
+.studio-body,
+.studio-head {
+  padding-left: 93px;
+}
+.studio-body .h2,
+.studio-head .h2 {
+  margin: 22px 6px;
+}
+.studio-body .small,
+.studio-head .small {
+  font-size: 80%;
+}
 .btn {
   color: #ffffff;
   padding: 16px 40px;

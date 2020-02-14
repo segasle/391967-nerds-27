@@ -30,8 +30,8 @@
         </nav>
       </div>
       <div class="col-3">
-        <div class="cart">
-          <a href="" class="fas fa-shopping-cart text-uppercase link">Корзина</a>
+        <div class="cart d-flex">
+          <a href="" class="fas fa-shopping-cart text-uppercase link active">Корзина</a>
         </div>
       </div>
     </div>
@@ -41,16 +41,15 @@
 </header>
 <main>
   <div class="container">
-
     <div class="row">
       <div class="col-4">
         <form method="post">
+          <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
           <div class="range">
             <div class="line"></div>
             <button type="button" class="circle" aria-label="минимальная цена"></button>
             <button type="button" class="circle" aria-label="максимальная цена"></button>
           </div>
-          <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
           <label for="to" class="text-uppercase">От</label>
           <input type="text" id="to" placeholder="0" value="0">
           <label for="go" class="text-uppercase">До</label>

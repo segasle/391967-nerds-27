@@ -60,18 +60,14 @@ html {
   margin: 0 auto;
   position: relative;
 }
-.header {
-  padding-top: 45px;
-  background: #eeeeee;
-}
-.header .cart {
+.cart {
   padding-top: 35px;
   justify-content: flex-end;
 }
-.header .cart a {
+.cart a {
   position: relative;
 }
-.header .cart a::before {
+.cart a::before {
   content: '';
   background-image: url("../img/icons/cart-icon.svg");
   display: block;
@@ -82,10 +78,14 @@ html {
   width: 16px;
   height: 16px;
 }
-.header.space {
+.cart .header {
+  padding-top: 45px;
+  background: #eeeeee;
+}
+.cart.space {
   padding-bottom: 88px;
 }
-.header h1.h1 {
+.cart h1.h1 {
   margin-top: 85px;
 }
 .relative {

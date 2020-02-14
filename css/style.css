@@ -431,6 +431,7 @@ a.active {
 .fa-instagram:active,
 .fa-facebook-f:active {
   background-color: #f90b11;
+  fill: rgba(255, 255, 255, 0.2);
 }
 .fa-vk {
   border-radius: 100%;

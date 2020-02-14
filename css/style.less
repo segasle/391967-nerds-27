@@ -370,6 +370,15 @@ a.active {
   margin-top: 60px;
   padding-bottom: 31px;
   border-bottom: 1px solid @bg;
+  img{
+    opacity: .4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .col-3{
+    border-right: 1px solid @bg;
+  }
 }
 
 .google {
@@ -396,14 +405,13 @@ a.active {
   }
 }
 
-.logo {
+.logo, .partners {
   img {
     &:active {
       opacity: .2;
     }
   }
 }
-
 .flex {
   &-column-reverse {
     flex-direction: column-reverse;

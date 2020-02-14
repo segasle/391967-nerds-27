@@ -264,6 +264,15 @@ a.active {
   padding-bottom: 31px;
   border-bottom: 1px solid #eeeeee;
 }
+.partners img {
+  opacity: 0.4;
+}
+.partners img:hover {
+  opacity: 1;
+}
+.partners .col-3 {
+  border-right: 1px solid #eeeeee;
+}
 .google {
   margin-top: 85px;
   background-image: url("../img/maps.jpg");
@@ -283,7 +292,8 @@ a.active {
   background: #ffffff;
   width: 315px;
 }
-.logo img:active {
+.logo img:active,
+.partners img:active {
   opacity: 0.2;
 }
 .flex-column-reverse {

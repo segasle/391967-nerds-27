@@ -283,14 +283,28 @@ a.active {
   opacity: 0.5;
   background-position: center top;
 }
+.google .container {
+  min-height: 100%;
+}
 .google-maps {
   position: absolute;
   right: 22%;
-  top: 71%;
+  top: 21%;
 }
 .google-address {
   background: #ffffff;
   width: 315px;
+  position: absolute;
+  top: 53px;
+  padding: 34px 52px 42px;
+}
+.google-address .address {
+  margin-top: 29px;
+  margin-bottom: 14px;
+}
+.google-address .btn {
+  margin-top: 28px;
+  display: block;
 }
 .logo img:active,
 .partners img:active {
@@ -395,7 +409,7 @@ a.active {
   margin: 25px 0;
 }
 .footer {
-  padding-top: 34px;
+  padding-top: 41px;
 }
 .footer ul {
   list-style: none;

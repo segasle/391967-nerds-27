@@ -390,18 +390,31 @@ a.active {
   position: relative;
   opacity: .5;
   background-position: center top;
-
+  .container{
+    min-height: 100%;
+  }
 
   &-maps {
     position: absolute;
     right: 22%;
-    top: 71%;
+    top: 21%;
   }
 
 
   &-address {
     background: @bg2;
     width: 315px;
+    position: absolute;
+    top: 53px;
+    padding: 34px 52px 42px;
+    .address{
+      margin-top: 29px;
+      margin-bottom: 14px;
+    }
+    .btn{
+      margin-top: 28px;
+      display: block;
+    }
   }
 }
 
@@ -537,7 +550,7 @@ a.active {
 }
 
 .footer {
-  padding-top: 34px;
+  padding-top: 41px;
 
   ul {
     list-style: none;

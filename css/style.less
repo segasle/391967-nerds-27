@@ -124,8 +124,8 @@ html {
 
 .img {
   position: absolute;
-  top: -15px;
-  left: 27px;
+  top: 10px;
+  left: -33px;
 }
 
 .row {
@@ -268,7 +268,7 @@ a.active {
 
   &-section {
     padding-bottom: 93px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid @bg;
   }
 
   &-text {
@@ -291,9 +291,10 @@ a.active {
 }
 
 .carousel {
+  width: 100%;
   .h1 {
     line-height: 55px;
-    margin: 45px 0 0 0;
+    margin: 74px 0 0 0;
   }
 
   &-caption {
@@ -306,17 +307,31 @@ a.active {
 
     .btn {
       display: table;
-      margin-top: 44px;
+      margin-top: 39px;
       padding: 10px 55px;
     }
   }
 
   &-item {
-    min-height: 405px;
+    min-height: 430px;
   }
+  &-inner {
+    min-height: 100%;
+  }
+  &-indicators {
+    position: absolute;
 
+    top: 71%;
+    right: 49%;
+    z-index: 9;
+  }
 }
+.w{
 
+  &-100 {
+    width: 100%;
+  }
+}
 .roboto {
   &-medium {
     font-weight: 500;

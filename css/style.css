@@ -93,8 +93,8 @@ html {
 }
 .img {
   position: absolute;
-  top: -15px;
-  left: 27px;
+  top: 10px;
+  left: -33px;
 }
 .row {
   display: flex;
@@ -195,7 +195,7 @@ a.active {
 }
 .card-section {
   padding-bottom: 93px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #eeeeee;
 }
 .card-text {
   line-height: 24px;
@@ -211,9 +211,12 @@ a.active {
 .cart-bg .text {
   line-height: 18px;
 }
+.carousel {
+  width: 100%;
+}
 .carousel .h1 {
   line-height: 55px;
-  margin: 45px 0 0 0;
+  margin: 74px 0 0 0;
 }
 .carousel-caption {
   max-width: 54%;
@@ -224,11 +227,23 @@ a.active {
 }
 .carousel-caption .btn {
   display: table;
-  margin-top: 44px;
+  margin-top: 39px;
   padding: 10px 55px;
 }
 .carousel-item {
-  min-height: 405px;
+  min-height: 430px;
+}
+.carousel-inner {
+  min-height: 100%;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 71%;
+  right: 49%;
+  z-index: 9;
+}
+.w-100 {
+  width: 100%;
 }
 .roboto-medium {
   font-weight: 500;

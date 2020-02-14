@@ -554,14 +554,11 @@ a.active {
 
   ul {
     list-style: none;
-    margin: 35px 0;
+    margin: 25px 0;
     padding: 0;
   }
 
   li {
-    border-radius: 100%;
-    background-color: @btn4;
-    padding: 37px;
     margin: 0 7px;
   }
 
@@ -571,14 +568,28 @@ a.active {
 }
 
 .fa {
+
+  &-vk, &-instagram, &-facebook-f{
+    &:hover {
+      background-color: @btn;
+    }
+  }
   &-vk {
+    border-radius: 100%;
+    background-color: @btn4;
+    padding: 37px;
     background-image: url("../img/icons/vk-icon.svg");
     display: block;
     background-repeat: no-repeat;
-    height: 10px;
+    background-position: center;
+
   }
 
   &-facebook-f {
+    background-position: center;
+    border-radius: 100%;
+    background-color: @btn4;
+    padding: 37px;
     background-image: url("../img/icons/fb-icon.svg");
     display: block;
     background-repeat: no-repeat;
@@ -586,6 +597,10 @@ a.active {
   }
 
   &-instagram {
+    background-position: center;
+    border-radius: 100%;
+    background-color: @btn4;
+    padding: 37px;
     background-image: url("../img/icons/insta-icon.svg");
     display: block;
     background-repeat: no-repeat;

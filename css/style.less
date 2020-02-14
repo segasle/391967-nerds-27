@@ -292,6 +292,7 @@ a.active {
 
 .carousel {
   width: 100%;
+
   .h1 {
     line-height: 55px;
     margin: 74px 0 0 0;
@@ -315,29 +316,38 @@ a.active {
   &-item {
     min-height: 430px;
   }
+
   &-inner {
     min-height: 100%;
   }
+
   &-indicators {
     position: absolute;
     top: 71%;
     right: 49%;
     z-index: 9;
-    button{
-      border-radius: 100%;
 
+    button {
+      border-radius: 100%;
       width: 15px;
       height: 15px;
-
-  }
+     //&.active{
+     //  border: 2px solid @btn4;
+     //  width: 10px;
+     //  height: 10px;
+     //
+//     }
+    }
   }
 }
-.w{
+
+.w {
 
   &-100 {
     width: 100%;
   }
 }
+
 .roboto {
   &-medium {
     font-weight: 500;

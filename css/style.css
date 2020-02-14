@@ -427,6 +427,11 @@ a.active {
 .fa-facebook-f:hover {
   background-color: #fb565a;
 }
+.fa-vk:active,
+.fa-instagram:active,
+.fa-facebook-f:active {
+  background-color: #f90b11;
+}
 .fa-vk {
   border-radius: 100%;
   background-color: #b4b4b4;

@@ -464,9 +464,9 @@ a.active {
     }
   }
 }
+@darken: 15%;
 
 .btn {
-  @darken: 15%;
   color: @bg2;
   padding: 16px 40px;
   font-weight: bold;
@@ -572,6 +572,9 @@ a.active {
   &-vk, &-instagram, &-facebook-f{
     &:hover {
       background-color: @btn;
+    }
+    &:active {
+      background-color: darken(@btn, @darken);
     }
   }
   &-vk {

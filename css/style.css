@@ -260,10 +260,12 @@ a.active {
   margin: 0 auto;
 }
 .partners {
-  margin-top: 106px;
+  margin-top: 60px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #eeeeee;
 }
 .google {
-  margin-top: 118px;
+  margin-top: 85px;
   background-image: url("../img/maps.jpg");
   height: 416px;
   background-repeat: no-repeat;
@@ -289,6 +291,8 @@ a.active {
 }
 .studio {
   margin-top: 18px;
+  padding-bottom: 43px;
+  border-bottom: 1px solid #eeeeee;
 }
 .studio img {
   margin-left: 103px;

@@ -175,12 +175,17 @@ html {
   flex: 0 0 58.3333%;
   max-width: 58.3333%;
 }
+.col-1 {
+  flex: 0 0 8.3333%;
+  max-width: 8.3333%;
+}
 .col-3,
 .col-6,
 .col-4,
 .col-5,
 .col-8,
-.col-7 {
+.col-7,
+.col-1 {
   padding: 0 20px;
 }
 .main {
@@ -518,7 +523,7 @@ a.active {
   background-image: url("../img/icons/browser.svg");
   display: block;
   background-repeat: no-repeat;
-  height: 20px;
+  height: 40px;
 }
 .fa-top {
   background-image: url("../img/icons/icon-up-dir.svg");

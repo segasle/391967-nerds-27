@@ -102,15 +102,19 @@ html {
       height: 16px;
     }
   }
+}
+.range{
+  background: @btn4;
+  margin-top: 30px;
+  height: 30px;
+}
 .header {
   padding-top: 45px;
   background: @bg;
 
-  }
-
   &.space {
     padding-bottom: 88px;
-   // margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   h1.h1 {
@@ -331,12 +335,12 @@ a.active {
       border-radius: 100%;
       width: 15px;
       height: 15px;
-     //&.active{
-     //  border: 2px solid @btn4;
-     //  width: 10px;
-     //  height: 10px;
-     //
-//     }
+      //&.active{
+      //  border: 2px solid @btn4;
+      //  width: 10px;
+      //  height: 10px;
+      //
+      //     }
     }
   }
 }
@@ -370,13 +374,16 @@ a.active {
   margin-top: 60px;
   padding-bottom: 31px;
   border-bottom: 1px solid @bg;
-  img{
+
+  img {
     opacity: .4;
+
     &:hover {
       opacity: 1;
     }
   }
-  .col-3{
+
+  .col-3 {
     border-right: 1px solid @bg;
   }
 }
@@ -390,7 +397,8 @@ a.active {
   position: relative;
   opacity: .5;
   background-position: center top;
-  .container{
+
+  .container {
     min-height: 100%;
   }
 
@@ -407,11 +415,13 @@ a.active {
     position: absolute;
     top: 53px;
     padding: 34px 52px 42px;
-    .address{
+
+    .address {
       margin-top: 29px;
       margin-bottom: 14px;
     }
-    .btn{
+
+    .btn {
       margin-top: 28px;
       display: block;
     }
@@ -425,6 +435,7 @@ a.active {
     }
   }
 }
+
 .flex {
   &-column-reverse {
     flex-direction: column-reverse;
@@ -436,6 +447,7 @@ a.active {
   margin-top: 18px;
   padding-bottom: 43px;
   border-bottom: 1px solid @bg;
+
   img {
     margin-left: 103px;
     margin-top: 22px;
@@ -464,6 +476,7 @@ a.active {
     }
   }
 }
+
 @darken: 15%;
 
 .btn {
@@ -569,15 +582,17 @@ a.active {
 
 .fa {
 
-  &-vk, &-instagram, &-facebook-f{
+  &-vk, &-instagram, &-facebook-f {
     &:hover {
       background-color: @btn;
     }
+
     &:active {
       background-color: darken(@btn, @darken);
-      fill: rgba(255,255,255,.2);
+      fill: rgba(255, 255, 255, .2);
     }
   }
+
   &-vk {
     border-radius: 100%;
     background-color: @btn4;

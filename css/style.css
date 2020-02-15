@@ -78,14 +78,19 @@ html {
   width: 16px;
   height: 16px;
 }
-.cart .header {
+.range {
+  background: #b4b4b4;
+  margin-top: 30px;
+  height: 30px;
+}
+.header {
   padding-top: 45px;
   background: #eeeeee;
 }
-.cart.space {
+.header.space {
   padding-bottom: 88px;
 }
-.cart h1.h1 {
+.header h1.h1 {
   margin-top: 85px;
 }
 .relative {

@@ -103,14 +103,47 @@ html {
     }
   }
 }
+.form{
+  max-width: 260px;
+}
 .range{
   background: @btn4;
-  margin-top: 30px;
-  height: 30px;
+  margin-top: 59px;
+  height: 74px;
+  padding: 18px;
   .circle{
-    height: 10px;
-    width: 10px;
-    background: @bg;
+    height: 23px;
+    width: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-image: url("../img/icons/filter-button.svg");
+    background-repeat: no-repeat;
+    &-left, &-right{
+      position: absolute;
+      top: -8px;
+      left: 0;
+    }
+    &-right{
+      right: 30%;
+      left: auto;
+    }
+  }
+  .line{
+    margin-top: 18px;
+    background: #d7dcde;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    &:before{
+      width: 70%;
+      height: 3px;
+      background: @btn2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+    }
   }
 }
 .header {
@@ -261,6 +294,10 @@ a.active {
 
   &-minus {
     font-size: @sizeminus;
+    margin: 5px 9px;
+    &:first-child{
+      margin-left: 0;
+    }
   }
 
 
@@ -558,7 +595,10 @@ a.active {
   color: @black;
   font-size: 36px;
 }
-
+.sorting{
+  list-style: none;
+  padding: 0;
+}
 .ul {
   margin-left: -5px;
 
@@ -645,13 +685,15 @@ a.active {
     background-image: url("../img/icons/icon-up-dir.svg");
     display: block;
     background-repeat: no-repeat;
-    height: 20px;
+    height: 13px;
+    width: 10px;
   }
 
   &-bottom {
     background-image: url("../img/icons/icon-down-dir.svg");
     display: block;
     background-repeat: no-repeat;
-    height: 20px;
+    height: 13px;
+    width: 10px;
   }
 }

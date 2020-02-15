@@ -43,12 +43,13 @@
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <form method="post">
+        <form method="post" class="form">
           <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
           <div class="range">
-            <div class="line"></div>
-            <button type="button" class="circle" aria-label="минимальная цена"></button>
-            <button type="button" class="circle" aria-label="максимальная цена"></button>
+            <div class="line">
+              <button type="button" class="circle circle-left" aria-label="минимальная цена"></button>
+              <button type="button" class="circle circle-right" aria-label="максимальная цена"></button>
+            </div>
           </div>
           <label for="to" class="text-uppercase">От</label>
           <input type="text" id="to" placeholder="0" value="0">
@@ -106,17 +107,21 @@
       </div>
       <div class="col-8">
         <div class="row">
-          <div class="col-8">
+          <div class="col-6">
             <p class="bold text-uppercase roboto-bold title">Сортировать</p>
           </div>
-          <div class="col-4">
-            <ul>
-              <li class="title-minus">По цене</li>
-              <li class="title-minus">По типу</li>
-              <li class="title-minus">По названию</li>
+          <div class="col-5">
+            <ul class="d-flex sorting">
+              <li class="title-minus text-uppercase">По цене</li>
+              <li class="title-minus text-uppercase">По типу</li>
+              <li class="title-minus text-uppercase">По названию</li>
             </ul>
-            <a href="" class="fas fa-top"></a>
-            <a href="" class="fas fa-bottom"></a>
+          </div>
+          <div class="col-1">
+            <div class="d-flex">
+              <a href="" class="fas fa-bottom"></a>
+              <a href="" class="fas fa-top"></a>
+            </div>
           </div>
         </div>
         <div class="row">

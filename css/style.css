@@ -75,6 +75,13 @@ html {
 .form {
   max-width: 260px;
 }
+.radio {
+  background-image: url("../img/icons/radio-on.svg");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .input-text {
   background: #b4b4b4;
   padding: 8px;

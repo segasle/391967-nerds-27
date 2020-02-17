@@ -75,6 +75,18 @@ html {
 .form {
   max-width: 260px;
 }
+.input-text {
+  background: #b4b4b4;
+  padding: 8px;
+  width: 74px;
+  text-align: center;
+}
+.label-text {
+  margin-right: 11px;
+}
+.counter {
+  margin-top: 15px;
+}
 .range {
   background: #b4b4b4;
   margin-top: 59px;

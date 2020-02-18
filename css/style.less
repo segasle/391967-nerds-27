@@ -1,6 +1,10 @@
 @bg: #eeeeee;
 @black: #000000;
 @bg2: #ffffff;
+@active-green: #00aa62;
+@hover-green: #00bc6c;
+@active-yellow: #e5a722;
+@hover-yellow: #eab534;
 @active-red: #d7373b;
 @hover-red: #e74250;
 @btn: #fb565a;
@@ -675,10 +679,15 @@ a.active {
     background: @btn2;
 
     &:active {
-      background: darken(@btn2, @darken);
+      background: @active-green;
 
       color: rgba(255, 255, 255, .5);
       box-shadow: 0 -3px 0 0 #009958;
+    }
+
+    &:hover {
+      background: @hover-green;
+
     }
   }
 
@@ -686,10 +695,15 @@ a.active {
     background: @btn3;
 
     &:active {
-      background: darken(@btn3, @darken);
+      background: @active-yellow;
 
       color: rgba(255, 255, 255, .5);
       box-shadow: 0 -3px 0 0 #ce961f;
+    }
+
+    &:hover {
+      background: @hover-yellow;
+
     }
   }
 

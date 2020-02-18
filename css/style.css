@@ -497,17 +497,23 @@ a.active {
   background: #00ca74;
 }
 .btn-green:active {
-  background: #007e48;
+  background: #00aa62;
   color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 -3px 0 0 #009958;
+}
+.btn-green:hover {
+  background: #00bc6c;
 }
 .btn-yellow {
   background: #efa84a;
 }
 .btn-yellow:active {
-  background: #d98413;
+  background: #e5a722;
   color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 -3px 0 0 #ce961f;
+}
+.btn-yellow:hover {
+  background: #eab534;
 }
 .btn-gray {
   background: #b4b4b4;

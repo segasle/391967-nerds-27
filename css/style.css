@@ -312,6 +312,13 @@ a.active {
 .title-minus:first-child {
   margin-left: 0;
 }
+.title-minus a {
+  color: #000000;
+  text-decoration: none;
+}
+.opacity {
+  opacity: 0.4;
+}
 .card-title {
   font-size: 24px;
   font-weight: bold;

@@ -1,6 +1,8 @@
 @bg: #eeeeee;
 @black: #000000;
 @bg2: #ffffff;
+@active-red: #d7373b;
+@hover-red: #e74250;
 @btn: #fb565a;
 @btn2: #00ca74;
 @btn3: #efa84a;
@@ -9,6 +11,7 @@
 @size: 16px;
 @sizeplus: @size + 2px;
 @sizeminus: @size - 2px;
+
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -650,22 +653,21 @@ a.active {
   color: @bg2;
   padding: 16px 40px;
   font-weight: bold;
-  opacity: .5;
   text-decoration: none;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, .5);
-  }
+  border-radius: 2px;
 
   &-red {
     background: @btn;
 
     &:active {
-      background: darken(@btn, @darken);
+      background: @active-red;
+      color: rgba(255, 255, 255, .5);
+      box-shadow: 0 -3px 0 0 #c13135;
+
+    }
+    &:hover {
+      background: @hover-red;
+
     }
   }
 
@@ -674,6 +676,9 @@ a.active {
 
     &:active {
       background: darken(@btn2, @darken);
+
+      color: rgba(255, 255, 255, .5);
+      box-shadow: 0 -3px 0 0 #009958;
     }
   }
 
@@ -682,6 +687,9 @@ a.active {
 
     &:active {
       background: darken(@btn3, @darken);
+
+      color: rgba(255, 255, 255, .5);
+      box-shadow: 0 -3px 0 0 #ce961f;
     }
   }
 

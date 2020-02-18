@@ -479,32 +479,35 @@ a.active {
   color: #ffffff;
   padding: 16px 40px;
   font-weight: bold;
-  opacity: 0.5;
   text-decoration: none;
-}
-.btn:hover {
-  opacity: 1;
-}
-.btn:active {
-  color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
 }
 .btn-red {
   background: #fb565a;
 }
 .btn-red:active {
-  background: #f90b11;
+  background: #d7373b;
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -3px 0 0 #c13135;
+}
+.btn-red:hover {
+  background: #e74250;
 }
 .btn-green {
   background: #00ca74;
 }
 .btn-green:active {
   background: #007e48;
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -3px 0 0 #009958;
 }
 .btn-yellow {
   background: #efa84a;
 }
 .btn-yellow:active {
   background: #d98413;
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -3px 0 0 #ce961f;
 }
 .btn-gray {
   background: #b4b4b4;

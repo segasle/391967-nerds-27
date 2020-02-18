@@ -106,10 +106,10 @@ html {
   background-image: url("../img/icons/checkbox-off.svg");
 }
 .check-section {
-  margin-top: 39px;
+  margin: 39px 0;
 }
 .check-block {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .input-text {
   border: none;

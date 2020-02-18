@@ -100,12 +100,25 @@ html {
   &-group{
   }
 }
-.radio{
-  background-image: url("../img/icons/radio-on.svg");
+.fake{
+  background-image: url("../img/icons/radio-off.svg");
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
-  background-position: center;
+  display: inline-flex;
+  &:checked + .radio-text{
+
+    background-image: url("../img/icons/radio-on.svg");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: inline-flex;
+  }
+}
+.radio{
+  &-block{
+    margin-bottom: 7px;
+  }
 }
 .input{
   &-text{

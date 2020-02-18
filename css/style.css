@@ -63,6 +63,7 @@ html {
 .cart {
   padding-top: 35px;
   justify-content: flex-end;
+  opacity: 0.5;
 }
 .cart-bg {
   background: #b4b4b4;
@@ -70,7 +71,10 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 35px 80px 71px 80px;
+  min-height: 239px;
+}
+.cart-bg .description {
+  padding: 0 80px 71px 80px;
 }
 .form {
   max-width: 260px;

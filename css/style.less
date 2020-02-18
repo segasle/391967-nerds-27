@@ -100,7 +100,7 @@ html {
   &-group{
   }
 }
-.fake{
+.fake, .check-fake{
   background-image: url("../img/icons/radio-off.svg");
   width: 25px;
   height: 25px;
@@ -116,8 +116,32 @@ html {
   &-text{
     position: absolute;
     left: 36px;
-    top: -8px;
+    top: 1px;
     line-height: 20px;
+  }
+  &-section{
+    margin-top: 60px;
+  }
+}
+.check{
+  width: 200px;
+  display: block;
+
+  &-fake{
+    background-image: url("../img/icons/checkbox-off.svg");
+  }
+  //&-text{
+  //  position: absolute;
+  //  left: 36px;
+  //  top: -8px;
+  //  line-height: 20px;
+  //}
+  &-section{
+    margin-top: 39px;
+  }
+  &-block{
+    margin-bottom: 9px;
+
   }
 }
 .input{
@@ -131,12 +155,15 @@ html {
     width: 74px;
     text-align: center;
   }
-  &:checked + .fake{
+  &:checked + .fake,&:checked + .check-fake{
     background-image: url("../img/icons/radio-on.svg");
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
     display: inline-flex;
+  }
+  &:checked + .check-fake{
+    background-image: url("../img/icons/checkbox-on.svg");
   }
 }
 .label{
@@ -149,7 +176,7 @@ html {
 }
 .range{
   background: @bg;
-  margin-top: 59px;
+  margin-top: 54px;
   height: 74px;
   padding: 18px;
   .circle{
@@ -455,6 +482,7 @@ a.active {
 
   &-100 {
     width: 100%;
+    display: block;
   }
 }
 

@@ -44,7 +44,8 @@
     <div class="row">
       <div class="col-4">
         <form method="post" class="form">
-          <p class="title text-uppercase roboto-bold"><b>Стоимость</b></p>
+          <p class="title text-uppercase roboto-bold" style="padding-top: 5px;
+    padding-left: 2px;"><b>Стоимость</b></p>
           <div class="range">
             <div class="line">
               <div class="line-show"></div>
@@ -64,58 +65,73 @@
               <input type="text" id="go" class="form-control input-text" value="15 000" placeholder="15 000">
             </div>
           </div>
-          <p class="roboto-bold text-uppercase title" style="margin-top: 60px;"><b>Сетка</b></p>
-          <div class="radio-block">
-            <label class="radio">
-              <input type="radio" class="d-none input" id="radio1" name="q1">
-              <span class="fake"></span>
-              <span class="radio-text">Адаптивная</span>
-            </label>
+          <div class="radio-section">
+            <p class="roboto-bold text-uppercase title"><b>Сетка</b></p>
+            <div class="radio-block">
+              <label class="radio w-100">
+                <input type="radio" class="d-none input" id="radio1" name="q1" checked>
+                <span class="fake"></span>
+                <span class="radio-text">Адаптивная</span>
+              </label>
+            </div>
+            <div class="radio-block">
+              <label class="radio w-100">
+                <input type="radio" name="q1" class="d-none input">
+                <span class="fake"></span>
+                <span class="radio-text">Фиксированная</span>
+              </label>
+            </div>
+            <div class="radio-block">
+              <label class="radio w-100">
+                <input type="radio" name="q1" class="d-none input">
+                <span class="fake"></span>
+                <span class="radio-text">Резиновая</span>
+              </label>
+            </div>
           </div>
-          <div class="radio-block">
-            <label class="radio">
-              <input type="radio" name="q1" class="d-none input">
-              <span class="fake"></span>
-              <span class="radio-text">Фиксированная</span>
-            </label>
-          </div>
-          <div class="radio-block">
-            <label class="radio">
-              <input type="radio" name="q1" class="d-none input">
-              <span class="fake"></span>
-              <span class="radio-text">Резиновая</span>
-            </label>
-          </div>
-          <p class="roboto-bold text-uppercase title"><b>Оссобенности:</b></p>
-          <div class="">
-            <label>
-              <input type="checkbox" name="e1" checked>Слайдер
-            </label>
-          </div>
-          <div class="">
-            <label>
-              <input type="checkbox" name="e2">Блок преимуществ
-            </label>
-          </div>
-          <div class="">
-            <label>
-              <input type="checkbox" name="e3" checked>Новости
+          <div class="check-section">
 
-            </label>
-          </div>
-          <div class="">
-            <label>
-              <input type="checkbox" name="e5">Галерея
+            <p class="roboto-bold text-uppercase title"><b>Особенности:</b></p>
+            <div class="check-block">
+              <label class="check relative w-100">
+                <input type="checkbox" name="e1" checked class="d-none input">
+                <span class="check-fake"></span>
+                <span class="radio-text">Слайдер</span>
+              </label>
+            </div>
+            <div class="check-block">
+              <label class="check relative w-100">
+                <input type="checkbox" name="e2" class="d-none input">
+                <span class="check-fake"></span>
+                <span class="radio-text">Блок преимуществ</span>
 
-            </label>
-          </div>
-          <div class="">
-            <label>
-              <input type="checkbox" name="e4">Корзина
+              </label>
+            </div>
+            <div class="check-block">
+              <label class="check relative w-100">
+                <input type="checkbox" name="e3" checked class="d-none input">
+                <span class="check-fake"></span>
+                <span class="radio-text">Новости</span>
+              </label>
+            </div>
+            <div class="check-block">
+              <label class="check relative w-100">
+                <input type="checkbox" name="e5" class="d-none input">
+                <span class="check-fake"></span>
 
-            </label>
+                <span class="radio-text">Галерея</span>
+
+              </label>
+            </div>
+            <div class="check-block">
+              <label class="check relative w-100">
+                <input type="checkbox" name="e4" class="d-none input">
+                <span class="check-fake"></span>
+                <span class="radio-text">Корзина</span>
+              </label>
+            </div>
           </div>
-          <button type="button" class="btn btn-gray">показать</button>
+          <button type="button" class="btn btn-gray w-100">показать</button>
         </form>
       </div>
       <div class="col-8">
@@ -125,9 +141,9 @@
           </div>
           <div class="col-5">
             <ul class="d-flex sorting">
-              <li class="title-minus text-uppercase">По цене</li>
-              <li class="title-minus text-uppercase">По типу</li>
-              <li class="title-minus text-uppercase">По названию</li>
+              <li class="title-minus text-uppercase"><a href="">По цене</a></li>
+              <li class="title-minus text-uppercase"><a href="">По типу</a></li>
+              <li class="title-minus text-uppercase"><a href="">По названию</a></li>
             </ul>
           </div>
           <div class="col-1">

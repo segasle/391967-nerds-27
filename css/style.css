@@ -75,7 +75,8 @@ html {
 .form {
   max-width: 260px;
 }
-.fake {
+.fake,
+.check-fake {
   background-image: url("../img/icons/radio-off.svg");
   width: 25px;
   height: 25px;
@@ -91,8 +92,24 @@ html {
 .radio-text {
   position: absolute;
   left: 36px;
-  top: -8px;
+  top: 1px;
   line-height: 20px;
+}
+.radio-section {
+  margin-top: 60px;
+}
+.check {
+  width: 200px;
+  display: block;
+}
+.check-fake {
+  background-image: url("../img/icons/checkbox-off.svg");
+}
+.check-section {
+  margin-top: 39px;
+}
+.check-block {
+  margin-bottom: 9px;
 }
 .input-text {
   border: none;
@@ -104,12 +121,16 @@ html {
   width: 74px;
   text-align: center;
 }
-.input:checked + .fake {
+.input:checked + .fake,
+.input:checked + .check-fake {
   background-image: url("../img/icons/radio-on.svg");
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
+}
+.input:checked + .check-fake {
+  background-image: url("../img/icons/checkbox-on.svg");
 }
 .label-text {
   margin-right: 11px;
@@ -119,7 +140,7 @@ html {
 }
 .range {
   background: #eeeeee;
-  margin-top: 59px;
+  margin-top: 54px;
   height: 74px;
   padding: 18px;
 }
@@ -352,6 +373,7 @@ a.active {
 }
 .w-100 {
   width: 100%;
+  display: block;
 }
 .roboto-medium {
   font-weight: 500;

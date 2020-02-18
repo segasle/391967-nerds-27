@@ -106,26 +106,37 @@ html {
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
-  &:checked + .radio-text{
 
+}
+.radio{
+  position: relative;
+  &-block{
+    margin-bottom: 7px;
+  }
+  &-text{
+    position: absolute;
+    left: 36px;
+    top: -8px;
+    line-height: 20px;
+  }
+}
+.input{
+  &-text{
+    border: none;
+    line-height: 22px;
+    font-size: initial;
+    color: @text;
+    background: @btn4;
+    padding: 8px;
+    width: 74px;
+    text-align: center;
+  }
+  &:checked + .fake{
     background-image: url("../img/icons/radio-on.svg");
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
     display: inline-flex;
-  }
-}
-.radio{
-  &-block{
-    margin-bottom: 7px;
-  }
-}
-.input{
-  &-text{
-    background: @btn4;
-    padding: 8px;
-    width: 74px;
-    text-align: center;
   }
 }
 .label{
@@ -166,15 +177,13 @@ html {
     height: 3px;
     width: 100%;
     position: relative;
-    &:before{
+    &-show{
       width: 70%;
       height: 3px;
       background: @btn2;
       position: absolute;
       top: 0;
       left: 0;
-      content: '';
-      display: block;
     }
   }
 }

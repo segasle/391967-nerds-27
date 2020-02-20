@@ -148,6 +148,10 @@ html {
 }
 .radio {
   position: relative;
+  opacity: 0.3;
+}
+.radio:hover {
+  opacity: 1;
 }
 .radio-block {
   margin-bottom: 7px;
@@ -164,6 +168,10 @@ html {
 .check {
   width: 200px;
   display: block;
+  opacity: 0.3;
+}
+.check:hover {
+  opacity: 1;
 }
 .check-fake {
   background-image: url("../img/icons/checkbox-off.svg");
@@ -191,9 +199,13 @@ html {
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
+  opacity: 0.5;
 }
 .input:checked + .check-fake {
   background-image: url("../img/icons/checkbox-on.svg");
+}
+.input:disabled + .check-fake {
+  opacity: 0.3;
 }
 .label-text {
   margin-right: 11px;

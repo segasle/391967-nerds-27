@@ -211,7 +211,11 @@ html {
 }
 .radio {
   position: relative;
+  opacity: .3;
 
+  &:hover  {
+    opacity: 1;
+  }
   &-block {
     margin-bottom: 7px;
   }
@@ -231,7 +235,11 @@ html {
 .check {
   width: 200px;
   display: block;
+  opacity: .3;
 
+  &:hover  {
+    opacity: 1;
+  }
   &-fake {
     background-image: url("../img/icons/checkbox-off.svg");
   }
@@ -270,10 +278,15 @@ html {
     height: 25px;
     background-repeat: no-repeat;
     display: inline-flex;
+    opacity: .5;
   }
 
   &:checked + .check-fake {
     background-image: url("../img/icons/checkbox-on.svg");
+  }
+
+  &:disabled + .check-fake {
+    opacity: .3;
   }
 }
 

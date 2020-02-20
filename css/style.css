@@ -61,11 +61,10 @@ html {
   position: relative;
 }
 .cart {
-  padding-top: 35px;
-  justify-content: flex-end;
-  opacity: 0.5;
+  margin: 35px 0 -9px;
 }
 .cart-bg {
+  display: none;
   background: #b4b4b4;
   width: 100%;
   position: absolute;
@@ -74,7 +73,60 @@ html {
   min-height: 239px;
 }
 .cart-bg .description {
-  padding: 0 80px 71px 80px;
+  padding: 20px 81px 52px 79px;
+}
+.cart-bg .btn {
+  text-align: center;
+  margin-top: 28px;
+  padding: 13px 40px;
+}
+.cart:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4d4d4d;
+  box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+}
+.cart:hover > .cart-bg {
+  display: block;
+}
+.cart:hover > .fa-window {
+  opacity: 1;
+}
+.pagination {
+  margin-top: 69px;
+}
+.pagination ul {
+  display: flex;
+  border-radius: 0.25rem;
+  padding-left: 0;
+  list-style: none;
+}
+.pagination .page-link {
+  color: #000000;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #eeeeee;
+  border-color: #dee2e6;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.pagination .page-link:hover {
+  background-color: #dfdfdf;
+}
+.pagination .page-link:active {
+  box-shadow: 0 -3px 0 0 #bfbfbf;
+  background-color: #d5d5d5;
+}
+.pagination .page-link.active {
+  background: #ffffff;
+}
+.pagination .page-item {
+  margin-right: 5.5px;
+}
+.pagination .page-item:last-child > .page-link {
+  padding: 0.75rem 58px;
 }
 .form {
   max-width: 260px;
@@ -183,14 +235,14 @@ html {
   top: 0;
   left: 0;
 }
-.header {
-  padding-top: 45px;
-  background: #eeeeee;
+.basket {
+  padding-top: 35px;
+  justify-content: flex-end;
 }
-.header .cart a {
+.basket a {
   position: relative;
 }
-.header .cart a::before {
+.basket a::before {
   content: '';
   background-image: url("../img/icons/cart-icon.svg");
   display: block;
@@ -200,6 +252,10 @@ html {
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+}
+.header {
+  padding-top: 45px;
+  background: #eeeeee;
 }
 .header.space {
   padding-bottom: 88px;
@@ -311,7 +367,7 @@ a.active {
 }
 .title-minus {
   font-size: 14px;
-  margin: 5px 9px;
+  margin: 5px 13px;
 }
 .title-minus:first-child {
   margin-left: 0;
@@ -616,6 +672,7 @@ a.active {
   display: block;
   background-repeat: no-repeat;
   height: 40px;
+  opacity: 0.5;
 }
 .fa-top {
   background-image: url("../img/icons/icon-up-dir.svg");

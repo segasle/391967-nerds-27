@@ -140,6 +140,12 @@ html {
   background-repeat: no-repeat;
   display: inline-flex;
 }
+.align-items-center {
+  align-items: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
 .radio {
   position: relative;
 }
@@ -443,6 +449,9 @@ a.active {
   width: 100%;
   display: block;
 }
+.h-100 {
+  min-height: 100%;
+}
 .roboto-medium {
   font-weight: 500;
 }
@@ -604,8 +613,14 @@ a.active {
   color: #000000;
   font-size: 36px;
 }
-.sorting {
+.sorting,
+.arrows {
+  padding-top: 6px;
+}
+.sorting ul,
+.arrows ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 .ul {
@@ -688,5 +703,6 @@ a.active {
   background-repeat: no-repeat;
   height: 13px;
   width: 10px;
+  margin-right: 21px;
 }
 /*# sourceMappingURL=style.css.map */

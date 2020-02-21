@@ -53,6 +53,9 @@ html {
 .cart-bg .description {
   padding: 20px 81px 52px 79px;
 }
+.cart-bg a:active {
+  color: rgba(0, 0, 0, 0.5);
+}
 .cart-bg .btn {
   text-align: center;
   margin-top: 28px;

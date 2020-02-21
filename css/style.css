@@ -173,6 +173,21 @@ html {
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
 }
+.modal-header {
+  position: relative;
+  margin-bottom: 45px;
+}
+.modal-header .close {
+  background-image: url("../img/icons/close-cross.svg");
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
 .modal-body {
   margin-top: 20px;
 }

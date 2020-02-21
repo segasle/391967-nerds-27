@@ -263,6 +263,21 @@ html {
   box-shadow: 0 20px 40px 0 @black;
   //opacity: .8;
   &-dialog{}
+  &-header{
+    position: relative;
+    margin-bottom: 45px;
+    .close{
+      background-image: url("../img/icons/close-cross.svg");
+      width: 21px;
+      height: 21px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+  }
   &-body{
     margin-top: 20px;
     .btn{

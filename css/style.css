@@ -694,6 +694,17 @@ a.active {
 .footer p.h3 {
   margin-bottom: 5px;
 }
+.fa-vk,
+.fa-instagram,
+.fa-facebook-f {
+  padding: 37px;
+  border-radius: 100%;
+  background-color: #b4b4b4;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat;
+  height: 10px;
+}
 .fa-vk:hover,
 .fa-instagram:hover,
 .fa-facebook-f:hover {
@@ -706,33 +717,13 @@ a.active {
   fill: rgba(255, 255, 255, 0.2);
 }
 .fa-vk {
-  border-radius: 100%;
-  background-color: #b4b4b4;
-  padding: 37px;
   background-image: url("../img/icons/vk-icon.svg");
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .fa-facebook-f {
-  background-position: center;
-  border-radius: 100%;
-  background-color: #b4b4b4;
-  padding: 37px;
   background-image: url("../img/icons/fb-icon.svg");
-  display: block;
-  background-repeat: no-repeat;
-  height: 10px;
 }
 .fa-instagram {
-  background-position: center;
-  border-radius: 100%;
-  background-color: #b4b4b4;
-  padding: 37px;
   background-image: url("../img/icons/insta-icon.svg");
-  display: block;
-  background-repeat: no-repeat;
-  height: 10px;
 }
 .fa-window {
   background-image: url("../img/icons/browser.svg");

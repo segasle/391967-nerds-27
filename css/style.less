@@ -56,20 +56,20 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-.layout2 {
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/write-us.jpg");
-  width: 100%;
-  height: 664px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 1;
-}
+//
+//.layout2 {
+//
+//  position: fixed;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  background-image: url("../img/write-us.jpg");
+//  width: 100%;
+//  height: 664px;
+//  background-repeat: no-repeat;
+//  background-position: center top;
+//  opacity: 1;
+//}
 //
 //.layout {
 //  position: absolute;
@@ -261,6 +261,7 @@ html {
   width: 960px;
   background: @bg2;
   box-shadow: 0 20px 40px 0 @black;
+  display: none;
   //opacity: .8;
   &-dialog{}
   &-header{
@@ -732,6 +733,11 @@ a.active {
 
   .col-3 {
     border-right: 1px solid @bg;
+
+    &:last-child {
+      border-right: none;
+
+    }
   }
 }
 
@@ -930,9 +936,21 @@ a.active {
 
 .ul {
   margin-left: -5px;
+  list-style: none;
 
   li {
     margin: 25px 0;
+    position: relative;
+    &::before{
+      position: absolute;
+      left: -30px;
+      top: 11px;
+      content: '';
+      width: 20px;
+      height: 2px;
+      background-color: @btn;
+      display: block;
+    }
   }
 }
 

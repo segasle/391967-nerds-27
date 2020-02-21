@@ -32,18 +32,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-.layout2 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/write-us.jpg");
-  width: 100%;
-  height: 664px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  opacity: 1;
-}
 .container {
   width: 1200px;
   padding: 0 20px;
@@ -172,6 +160,7 @@ html {
   width: 960px;
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
+  display: none;
 }
 .modal-header {
   position: relative;
@@ -523,6 +512,9 @@ a.active {
 .partners .col-3 {
   border-right: 1px solid #eeeeee;
 }
+.partners .col-3:last-child {
+  border-right: none;
+}
 .google {
   background-image: url("../img/maps.jpg");
   height: 416px;
@@ -672,9 +664,21 @@ a.active {
 }
 .ul {
   margin-left: -5px;
+  list-style: none;
 }
 .ul li {
   margin: 25px 0;
+  position: relative;
+}
+.ul li::before {
+  position: absolute;
+  left: -30px;
+  top: 11px;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #fb565a;
+  display: block;
 }
 .footer {
   padding-top: 41px;

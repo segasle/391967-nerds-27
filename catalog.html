@@ -308,12 +308,12 @@
   </div>
 </footer>
 
-<div class="modal fade d-none" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Напишите нам</h5>
+        <h5 class="modal-title h2" id="exampleModalLabel">Напишите нам</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="fas fa-close"></span>
         </button>
@@ -321,22 +321,31 @@
       <div class="modal-body">
         <form method="post">
           <div class="row">
-            <div class="col">
-              <label for="name">
+            <div class="col-6">
+              <label for="name" class="roboto-medium">
                 Ваше имя</label>
-              <input type="text" id="name" class="form-control" name="name" placeholder="Имя Фамилия">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control w-100" name="name" placeholder="Имя Фамилия">
+              </div>
             </div>
-            <div class="col">
-              <label for="email">
+            <div class="col-6">
+              <label for="email" class="roboto-medium">
                 Ваш e-mail</label>
-              <input type="email" id="email" name="email" class="form-control" placeholder="email@example.com">
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control w-100" placeholder="email@example.com">
+              </div>
             </div>
           </div>
-          <label for="text">
-            Текст письма:</label>
-          <textarea name="text" id="text" cols="30" rows="10" class="form-control"
+          <div class="form-textarea">
+
+            <label for="text" class="roboto-medium">
+              Текст письма:</label>
+            <div class="form-group">
+          <textarea name="text" id="text" cols="30" rows="10" class="form-control w-100"
                     placeholder="В свободной форме"></textarea>
-          <button type="submit" class="btn btn-red">Отправить</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-red text-uppercase">Отправить</button>
         </form>
       </div>
     </div>

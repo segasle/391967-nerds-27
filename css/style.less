@@ -216,6 +216,7 @@ html {
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
+  opacity: .4;
 
 }
 
@@ -236,9 +237,9 @@ html {
 }
 .radio {
   position: relative;
-  opacity: .3;
+//  opacity: .3;
 
-  &:hover  {
+  &:hover > .fake {
     opacity: 1;
   }
   &-block {
@@ -306,9 +307,8 @@ html {
 .check {
   width: 200px;
   display: block;
-  opacity: .3;
 
-  &:hover  {
+  &:hover > &-fake {
     opacity: 1;
   }
   &-fake {
@@ -349,7 +349,6 @@ html {
     height: 25px;
     background-repeat: no-repeat;
     display: inline-flex;
-    opacity: .5;
   }
 
   &:checked + .check-fake {

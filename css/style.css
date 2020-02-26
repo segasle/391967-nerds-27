@@ -129,6 +129,7 @@ html {
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
+  opacity: 0.4;
 }
 .align-items-center {
   align-items: center;
@@ -138,9 +139,8 @@ html {
 }
 .radio {
   position: relative;
-  opacity: 0.3;
 }
-.radio:hover {
+.radio:hover > .fake {
   opacity: 1;
 }
 .radio-block {
@@ -202,9 +202,8 @@ html {
 .check {
   width: 200px;
   display: block;
-  opacity: 0.3;
 }
-.check:hover {
+.check:hover > .check-fake {
   opacity: 1;
 }
 .check-fake {
@@ -233,7 +232,6 @@ html {
   height: 25px;
   background-repeat: no-repeat;
   display: inline-flex;
-  opacity: 0.5;
 }
 .input:checked + .check-fake {
   background-image: url("../img/icons/checkbox-on.svg");

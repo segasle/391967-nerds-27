@@ -86,7 +86,6 @@ html {
 .pagination .page-link {
   color: #000000;
   text-decoration: none;
-  pointer-events: none;
   cursor: auto;
   background-color: #eeeeee;
   border-color: #dee2e6;

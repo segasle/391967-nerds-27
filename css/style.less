@@ -56,6 +56,35 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-200px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+}
+
 //
 //.layout2 {
 //
@@ -119,11 +148,13 @@ html {
     .description {
       padding: 20px 81px 52px 79px;
     }
-    a{
-      &:active{
-        color: rgba(0,0,0,.5);
+
+    a {
+      &:active {
+        color: rgba(0, 0, 0, .5);
       }
     }
+
     .btn {
       text-align: center;
       margin-top: 28px;
@@ -132,9 +163,6 @@ html {
   }
 
   &:hover {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(77, 77, 77);
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 
     > .cart-bg {
@@ -162,7 +190,7 @@ html {
     &-link {
       color: @black;
       text-decoration: none;
-      cursor: auto;
+     // cursor: pointer;
       background-color: @bg;
       border-color: #dee2e6;
       padding: .75rem 1.5rem;
@@ -202,6 +230,7 @@ html {
     margin-top: 30px;
     margin-bottom: 46px;
   }
+
   &-control {
     border: 1px solid #d7dcde;
     padding: 10px;
@@ -226,21 +255,24 @@ html {
     }
   }
 }
-.justify{
 
-  &-content{
+.justify {
+
+  &-content {
     &-space-between {
       justify-content: space-between;
     }
   }
 }
+
 .radio {
   position: relative;
-//  opacity: .3;
+  //  opacity: .3;
 
   &:hover > .fake {
     opacity: 1;
   }
+
   &-block {
     margin-bottom: 7px;
   }
@@ -256,7 +288,8 @@ html {
     margin-top: 60px;
   }
 }
-.modal{
+
+.modal {
   position: fixed;
   top: 43%;
   left: 50%;
@@ -267,11 +300,20 @@ html {
   box-shadow: 0 20px 40px 0 @black;
   display: none;
   //opacity: .8;
-  &-dialog{}
-  &-header{
+  animation-name: bounce;
+  animation-duration: 0.6s;
+
+  &-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+
+  }
+
+  &-header {
     position: relative;
     margin-bottom: 45px;
-    .close{
+
+    .close {
       background-image: url("../img/icons/close-cross.svg");
       width: 21px;
       height: 21px;
@@ -282,27 +324,34 @@ html {
       background-color: transparent;
       background-repeat: no-repeat;
       opacity: .7;
-      &:hover{
+
+      &:hover {
         opacity: 1;
       }
-      &:active{
+
+      &:active {
         opacity: .4;
       }
     }
   }
-  &-body{
+
+  &-body {
     margin-top: 20px;
-    .btn{
+
+    .btn {
       padding: 20px 80px;
     }
   }
-  &-title{
+
+  &-title {
     margin: 15px 0 0 0;
   }
-  &-content{
+
+  &-content {
     padding: 46px 100px;
   }
 }
+
 .check {
   width: 200px;
   display: block;
@@ -310,6 +359,7 @@ html {
   &:hover > &-fake {
     opacity: 1;
   }
+
   &-fake {
     background-image: url("../img/icons/checkbox-off.svg");
   }
@@ -336,7 +386,7 @@ html {
     line-height: 22px;
     font-size: initial;
     color: @text;
-    background: @btn4;
+    background: @bg;
     padding: 8px;
     width: 74px;
     text-align: center;
@@ -847,6 +897,7 @@ a.active {
   font-weight: bold;
   text-decoration: none;
   border-radius: 2px;
+  border: none;
 
   &-red {
     background: @btn;
@@ -897,11 +948,17 @@ a.active {
   }
 
   &-gray {
-    background: @btn4;
+    background: @bg;
     color: black;
-
+    font-weight: 400;
     &:active {
-      background: darken(@btn4, @darken);
+      background: #d5d5d5;
+      color: rgba(0,0,0, .5);
+      box-shadow: 0 -3px 0 0 #bfbfbf;
+
+    }
+    &:hover {
+      background: #dfdfdf;
     }
   }
 }
@@ -950,7 +1007,8 @@ a.active {
   li {
     margin: 25px 0;
     position: relative;
-    &::before{
+
+    &::before {
       position: absolute;
       left: -30px;
       top: 11px;
@@ -991,6 +1049,7 @@ a.active {
     display: block;
     background-repeat: no-repeat;
     height: 10px;
+
     &:hover {
       background-color: @hover-red;
     }
@@ -1022,7 +1081,7 @@ a.active {
     display: block;
     background-repeat: no-repeat;
     height: 40px;
-    opacity: .5;
+    opacity: .12;
   }
 
   &-top {

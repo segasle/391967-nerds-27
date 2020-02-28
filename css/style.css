@@ -32,6 +32,39 @@ html {
 *::after {
   box-sizing: inherit;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(-200px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+}
 .container {
   width: 1200px;
   padding: 0 20px;
@@ -62,9 +95,6 @@ html {
   padding: 13px 40px;
 }
 .cart:hover {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #4d4d4d;
   box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 .cart:hover > .cart-bg {
@@ -86,7 +116,6 @@ html {
 .pagination .page-link {
   color: #000000;
   text-decoration: none;
-  cursor: auto;
   background-color: #eeeeee;
   border-color: #dee2e6;
   padding: 0.75rem 1.5rem;
@@ -163,6 +192,12 @@ html {
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
   display: none;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 .modal-header {
   position: relative;
@@ -219,7 +254,7 @@ html {
   line-height: 22px;
   font-size: initial;
   color: #283136;
-  background: #b4b4b4;
+  background: #eeeeee;
   padding: 8px;
   width: 74px;
   text-align: center;
@@ -597,6 +632,7 @@ a.active {
   font-weight: bold;
   text-decoration: none;
   border-radius: 2px;
+  border: none;
 }
 .btn-red {
   background: #fb565a;
@@ -632,11 +668,17 @@ a.active {
   background: #eab534;
 }
 .btn-gray {
-  background: #b4b4b4;
+  background: #eeeeee;
   color: black;
+  font-weight: 400;
 }
 .btn-gray:active {
-  background: #8e8e8e;
+  background: #d5d5d5;
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -3px 0 0 #bfbfbf;
+}
+.btn-gray:hover {
+  background: #dfdfdf;
 }
 .h1 {
   color: #000000;
@@ -737,7 +779,7 @@ a.active {
   display: block;
   background-repeat: no-repeat;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.12;
 }
 .fa-top {
   background-image: url("../img/icons/icon-up-dir.svg");

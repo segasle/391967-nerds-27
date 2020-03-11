@@ -22,7 +22,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 100%;
-  line-height: 24px;
+  line-height: 23px;
 }
 html {
   box-sizing: border-box;
@@ -153,6 +153,7 @@ html {
 }
 .pagination .page-link.active {
   background: #ffffff;
+  border: 2px solid #dee2e6;
 }
 .pagination .page-item {
   margin-right: 5.5px;
@@ -194,7 +195,7 @@ html {
   opacity: 1;
 }
 .radio-block {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .radio-text {
   position: absolute;
@@ -203,7 +204,7 @@ html {
   line-height: 20px;
 }
 .radio-section {
-  margin-top: 50px;
+  margin-top: 57px;
 }
 .modal {
   position: fixed;
@@ -269,7 +270,7 @@ html {
   margin: 39px 0;
 }
 .check-block {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 .input-text {
   border: none;
@@ -299,12 +300,12 @@ html {
   margin-right: 11px;
 }
 .counter {
-  margin-top: 15px;
+  margin-top: 4px;
 }
 .range {
   background: #eeeeee;
   margin-top: 54px;
-  height: 74px;
+  height: 79px;
   padding: 18px;
 }
 .range .circle {
@@ -343,7 +344,7 @@ html {
   left: 0;
 }
 .basket {
-  padding-top: 35px;
+  padding-top: 28px;
   justify-content: flex-end;
 }
 .basket a {
@@ -354,21 +355,21 @@ html {
   background-image: url("../img/icons/cart-icon.svg");
   display: block;
   position: absolute;
-  left: -38px;
-  top: 5px;
+  left: -41px;
+  top: 4px;
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
 }
 .header {
-  padding-top: 45px;
+  padding-top: 50px;
   background: #eeeeee;
 }
 .header.space {
-  padding-bottom: 88px;
+  padding-bottom: 85px;
 }
 .header h1.h1 {
-  margin-top: 85px;
+  margin-top: 88px;
 }
 .relative {
   position: relative;
@@ -376,7 +377,7 @@ html {
 .img {
   position: absolute;
   top: 10px;
-  left: -33px;
+  left: -32px;
 }
 .row {
   display: flex;
@@ -437,7 +438,7 @@ html {
   padding: 0 20px;
 }
 .main {
-  padding-top: 72px;
+  padding-top: 80px;
 }
 .link {
   text-decoration: none;
@@ -453,7 +454,7 @@ a.active {
   border-bottom: 1px solid #fb565a;
 }
 .menu {
-  padding-top: 20px;
+  padding-top: 12px;
 }
 .menu ul {
   list-style: none;
@@ -484,7 +485,7 @@ a.active {
 }
 .title-minus {
   font-size: 14px;
-  margin: 5px 13px;
+  margin: 0 13px;
 }
 .title-minus:first-child {
   margin-left: 0;
@@ -510,9 +511,9 @@ a.active {
   color: #283136;
 }
 .card-width {
-  max-width: 244px;
-  margin-bottom: 44px;
-  margin-top: -4px;
+  max-width: 245px;
+  margin-bottom: 45px;
+  margin-top: -5px;
 }
 .google .text,
 .table .text,
@@ -524,29 +525,29 @@ a.active {
 }
 .carousel .h1 {
   line-height: 55px;
-  margin: 74px 0 0 0;
+  margin: 70px 0 0 0;
 }
 .carousel-caption {
-  max-width: 54%;
+  max-width: 55%;
   padding: 0 18px;
 }
 .carousel-caption .text {
-  margin-top: 26px;
+  margin-top: 27px;
 }
 .carousel-caption .btn {
   display: table;
   margin-top: 39px;
-  padding: 10px 55px;
+  padding: 13px 55px;
 }
 .carousel-item {
-  min-height: 430px;
+  min-height: 423px;
 }
 .carousel-inner {
   min-height: 100%;
 }
 .carousel-indicators {
   position: absolute;
-  top: 71%;
+  top: 72%;
   right: 49%;
   z-index: 9;
 }
@@ -573,7 +574,7 @@ a.active {
 }
 .partners {
   margin-top: 60px;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   padding-bottom: 31px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -629,16 +630,16 @@ a.active {
   flex-direction: column-reverse;
 }
 .studio {
-  margin-top: 18px;
-  padding-bottom: 43px;
+  margin-top: 17px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #eeeeee;
 }
 .studio img {
-  margin-left: 103px;
-  margin-top: 22px;
+  margin-left: 100px;
+  margin-top: 26px;
 }
 .studio-text {
-  padding-top: 12px;
+  padding-top: 13px;
   padding-right: 17px;
 }
 .studio-body,
@@ -647,16 +648,17 @@ a.active {
 }
 .studio-body .h2,
 .studio-head .h2 {
-  margin: 22px 6px 0;
+  margin: 22px 7px 0;
 }
 .studio-body .small,
 .studio-head .small {
-  font-size: 80%;
+  font-size: 65%;
+  top: -0.4em;
 }
 .studio-body .text,
 .studio-head .text {
   line-height: 19px;
-  margin: 11px 9px;
+  margin: 13px 9px;
 }
 .btn {
   color: #ffffff;
@@ -724,10 +726,10 @@ a.active {
   color: #000000;
 }
 .h2.margin-bottom {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 .space {
-  margin-bottom: 34px;
+  margin-bottom: 39px;
 }
 .h3 {
   color: #000000;
@@ -735,7 +737,7 @@ a.active {
 }
 .sorting,
 .arrows {
-  padding-top: 6px;
+  padding-top: 0;
 }
 .sorting ul,
 .arrows ul {
@@ -753,16 +755,16 @@ a.active {
 }
 .ul li::before {
   position: absolute;
-  left: -30px;
+  left: -34px;
   top: 11px;
   content: '';
-  width: 20px;
+  width: 25px;
   height: 2px;
   background-color: #fb565a;
   display: block;
 }
 .footer {
-  padding-top: 41px;
+  padding-top: 46px;
 }
 .footer ul {
   list-style: none;
@@ -770,7 +772,7 @@ a.active {
   padding: 0;
 }
 .footer li {
-  margin: 0 7px;
+  margin: 0 6px;
 }
 .footer p.h3 {
   margin-bottom: 5px;
@@ -778,7 +780,7 @@ a.active {
 .fa-vk,
 .fa-instagram,
 .fa-facebook-f {
-  padding: 37px;
+  padding: 38px;
   border-radius: 100%;
   background-color: #b4b4b4;
   background-position: center;
@@ -827,5 +829,35 @@ a.active {
   height: 13px;
   width: 10px;
   margin-right: 21px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .img {
+    left: 26px;
+  }
+  .carousel-indicators {
+    top: 73%;
+    right: 48%;
+  }
+  .studio-body,
+  .studio-head {
+    float: left;
+  }
+  .studio-body .h2,
+  .studio-head .h2 {
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+  .studio-body .small,
+  .studio-head .small {
+    top: -0.6em;
+  }
+  .sorting,
+  .arrows {
+    padding-top: 18px;
+  }
+  .radio-section {
+    margin-top: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

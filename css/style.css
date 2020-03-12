@@ -188,6 +188,9 @@ html {
 .justify-content-space-between {
   justify-content: space-between;
 }
+.valign-top {
+  vertical-align: top;
+}
 .radio {
   position: relative;
 }
@@ -479,6 +482,9 @@ a.active {
 }
 .text-right {
   text-align: right;
+}
+.text-left {
+  text-align: left;
 }
 .title {
   font-size: 18px;

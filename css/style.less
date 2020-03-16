@@ -85,20 +85,6 @@ html {
   }
 }
 
-//
-//.layout2 {
-//
-//  position: fixed;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
-//  background-image: url("../img/write-us.jpg");
-//  width: 100%;
-//  height: 664px;
-//  background-repeat: no-repeat;
-//  background-position: center top;
-//  opacity: 1;
-//}
 
 .layout {
   position: absolute;
@@ -134,7 +120,6 @@ html {
 
 .cart {
   margin: 35px 0 -9px;
-  //  opacity: .5;
 
   &-bg {
     display: none;
@@ -190,7 +175,6 @@ html {
     &-link {
       color: @black;
       text-decoration: none;
-      // cursor: pointer;
       background-color: @bg;
       border-color: #dee2e6;
       padding: .75rem 1.5rem;
@@ -274,7 +258,6 @@ html {
 
 .radio {
   position: relative;
-  //  opacity: .3;
 
   &:hover > .fake {
     opacity: 1;
@@ -301,12 +284,10 @@ html {
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //max-width: 90%;
   width: 960px;
   background: @bg2;
   box-shadow: 0 20px 40px 0 @black;
-  display: none;
-  //opacity: .8;
+  display: block;
   animation-name: bounce;
   animation-duration: 0.6s;
 
@@ -370,13 +351,6 @@ html {
   &-fake {
     background-image: url("../img/icons/checkbox-off.svg");
   }
-
-  //&-text{
-  //  position: absolute;
-  //  left: 36px;
-  //  top: -8px;
-  //  line-height: 20px;
-  //}
   &-section {
     margin: 39px 0;
   }
@@ -501,7 +475,6 @@ html {
 
   &.space {
     padding-bottom: 85px;
-    // margin-bottom: 0;
   }
 
   h1.h1 {
@@ -757,12 +730,7 @@ a.active {
       border-radius: 100%;
       width: 15px;
       height: 15px;
-      //&.active{
-      //  border: 2px solid @btn4;
-      //  width: 10px;
-      //  height: 10px;
-      //
-      //     }
+
     }
   }
 }
@@ -779,6 +747,9 @@ a.active {
 
   &-100 {
     min-height: 100%;
+  }
+  &-420 {
+    height:420px;
   }
 }
 
@@ -831,7 +802,6 @@ a.active {
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
-  //opacity: .5;
   background-size: cover;
   background-position: center top;
 
@@ -1007,7 +977,16 @@ a.active {
     margin-bottom: 32px;
   }
 }
-
+.margin{
+  &-right{
+    margin-right: 36px;
+  }
+}
+.padding{
+  &-left{
+    padding-left: 2px;
+  }
+}
 .space {
   margin-bottom: 39px;
 }

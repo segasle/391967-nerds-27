@@ -217,7 +217,7 @@ html {
   width: 960px;
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
-  display: none;
+  display: block;
   animation-name: bounce;
   animation-duration: 0.6s;
 }
@@ -569,6 +569,9 @@ a.active {
 .h-100 {
   min-height: 100%;
 }
+.h-420 {
+  height: 420px;
+}
 .roboto-medium {
   font-weight: 500;
 }
@@ -733,6 +736,12 @@ a.active {
 }
 .h2.margin-bottom {
   margin-bottom: 32px;
+}
+.margin-right {
+  margin-right: 36px;
+}
+.padding-left {
+  padding-left: 2px;
 }
 .space {
   margin-bottom: 39px;

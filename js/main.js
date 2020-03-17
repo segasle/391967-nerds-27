@@ -17,8 +17,6 @@ close.addEventListener('click', function () {
 form.addEventListener("submit", function (evt) {
     if (!name.value || !email.value) {
         evt.preventDefault();
-        //modal.offsetWidth=modal.offsetWidth;
-//        modal.offsetWidth = modal.offsetWidth;
         modal.classList.add("modal-error");
         modal.classList.remove('modal-error');
 

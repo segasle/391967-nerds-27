@@ -133,7 +133,9 @@ html {
     .description {
       padding: 20px 81px 52px 79px;
     }
-
+    .text{
+      color: #666666;
+    }
     a {
       &:active {
         color: rgba(0, 0, 0, .5);
@@ -287,7 +289,7 @@ html {
   width: 960px;
   background: @bg2;
   box-shadow: 0 20px 40px 0 @black;
-  display: block;
+  display: none;
   animation-name: bounce;
   animation-duration: 0.6s;
 
@@ -579,6 +581,7 @@ html {
 .link {
   text-decoration: none;
   color: @black;
+  padding-bottom: 10px;
 
   &:hover {
     color: @btn;
@@ -608,11 +611,14 @@ a.active {
   a {
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 10px;
   }
 
 }
-
+.cr{
+  &-gray{
+    color: #444444;
+   }
+}
 
 .text {
 
@@ -654,7 +660,7 @@ a.active {
 }
 
 .opacity {
-  opacity: .4;
+  opacity: .30;
 }
 
 .card {
@@ -722,15 +728,24 @@ a.active {
 
   &-indicators {
     position: absolute;
-    top: 72%;
-    right: 49%;
+    top: 73%;
+    right: 45%;
     z-index: 9;
 
     button {
       border-radius: 100%;
-      width: 15px;
-      height: 15px;
-
+      width: 20px;
+      height: 20px;
+      background: @bg2;
+      margin-right: 12px;
+    }
+    .active{
+      border-radius: 100%;
+      width: 6px;
+      height: 6px;
+      border: 2px solid #c2c2c2;
+      margin: auto;
+      display: block;
     }
   }
 }
@@ -837,17 +852,27 @@ a.active {
     padding: 34px 52px 42px;
 
     .address {
+      color: #666666;
+      font-weight: normal;
+      font-style: normal;
       margin-top: 29px;
       margin-bottom: 14px;
     }
 
     .btn {
-      margin-top: 28px;
+      margin-top: 31px;
       display: block;
     }
   }
 }
-
+.tel {
+  color: #666666;
+  a{
+    padding-left: 4px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
 .logo, .partners {
   img {
     &:active {
@@ -1009,6 +1034,7 @@ a.active {
   font-size: 36px;
 }
 
+
 .sorting, .arrows {
   padding-top: 0;
 
@@ -1127,8 +1153,8 @@ a.active {
     left: 26px;
   }
   .carousel-indicators {
-    top: 73%;
-    right: 48%;
+    top: 74%;
+    right: 46%;
   }
   .studio-body, .studio-head {
     float: left;

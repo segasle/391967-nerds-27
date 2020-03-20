@@ -108,6 +108,9 @@ html {
 .cart-bg .description {
   padding: 20px 81px 52px 79px;
 }
+.cart-bg .text {
+  color: #666666;
+}
 .cart-bg a:active {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -217,7 +220,7 @@ html {
   width: 960px;
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
-  display: block;
+  display: none;
   animation-name: bounce;
   animation-duration: 0.6s;
 }
@@ -446,6 +449,7 @@ html {
 .link {
   text-decoration: none;
   color: #000000;
+  padding-bottom: 10px;
 }
 .link:hover {
   color: #fb565a;
@@ -468,7 +472,9 @@ a.active {
 .menu a {
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 10px;
+}
+.cr-gray {
+  color: #444444;
 }
 .text {
   line-height: 24px;
@@ -501,7 +507,7 @@ a.active {
   text-decoration: none;
 }
 .opacity {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 .card-title {
   font-size: 24px;
@@ -553,14 +559,24 @@ a.active {
 }
 .carousel-indicators {
   position: absolute;
-  top: 72%;
-  right: 49%;
+  top: 73%;
+  right: 45%;
   z-index: 9;
 }
 .carousel-indicators button {
   border-radius: 100%;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  margin-right: 12px;
+}
+.carousel-indicators .active {
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #c2c2c2;
+  margin: auto;
+  display: block;
 }
 .w-100 {
   width: 100%;
@@ -633,12 +649,23 @@ a.active {
   padding: 34px 52px 42px;
 }
 .google-address .address {
+  color: #666666;
+  font-weight: normal;
+  font-style: normal;
   margin-top: 29px;
   margin-bottom: 14px;
 }
 .google-address .btn {
-  margin-top: 28px;
+  margin-top: 31px;
   display: block;
+}
+.tel {
+  color: #666666;
+}
+.tel a {
+  padding-left: 4px;
+  text-decoration: none;
+  color: inherit;
 }
 .logo img:active,
 .partners img:active {
@@ -860,8 +887,8 @@ a.active {
     left: 26px;
   }
   .carousel-indicators {
-    top: 73%;
-    right: 48%;
+    top: 74%;
+    right: 46%;
   }
   .studio-body,
   .studio-head {

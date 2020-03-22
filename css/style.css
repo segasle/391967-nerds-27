@@ -129,7 +129,7 @@ html {
   opacity: 1;
 }
 .pagination {
-  margin-top: 69px;
+  margin-top: 79px;
   margin-bottom: 72px;
 }
 .pagination ul {
@@ -143,8 +143,8 @@ html {
   text-decoration: none;
   background-color: #eeeeee;
   border-color: #dee2e6;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  padding: 12px 22px;
+  font-size: 16px;
   line-height: 1.5;
 }
 .pagination .page-link:hover {
@@ -162,19 +162,19 @@ html {
   margin-right: 5.5px;
 }
 .pagination .page-item:last-child > .page-link {
-  padding: 0.75rem 58px;
+  padding: 12px 80px;
 }
 .form {
   max-width: 260px;
 }
 .form-textarea {
-  margin-top: 30px;
-  margin-bottom: 46px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 .form-control {
   border: 1px solid #d7dcde;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 15px 10px;
+  margin-top: 4px;
 }
 .fake,
 .check-fake {
@@ -214,13 +214,13 @@ html {
 }
 .modal {
   position: fixed;
-  top: 43%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 960px;
   background: #ffffff;
   box-shadow: 0 20px 40px 0 #000000;
-  display: none;
+  display: block;
   animation-name: bounce;
   animation-duration: 0.6s;
 }
@@ -230,15 +230,15 @@ html {
 }
 .modal-header {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 39px;
 }
 .modal-header .close {
   background-image: url("../img/icons/close-cross.svg");
   width: 21px;
   height: 21px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: 9px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -254,13 +254,14 @@ html {
   margin-top: 20px;
 }
 .modal-body .btn {
-  padding: 20px 80px;
+  padding: 20px 85px;
+  margin-bottom: 23px;
 }
 .modal-title {
   margin: 15px 0 0 0;
 }
 .modal-content {
-  padding: 46px 100px;
+  padding: 57px 100px;
 }
 .check {
   width: 200px;
